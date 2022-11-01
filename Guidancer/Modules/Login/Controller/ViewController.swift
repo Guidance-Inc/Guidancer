@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import GuidancerUI
 
 class ViewController: UIViewController {
     
@@ -16,6 +15,7 @@ class ViewController: UIViewController {
         let button = GRectangleButton(title: "Done", didTap: burfsdf)
         button.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
         button.center = view.center
+        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 32)
         view.addSubview(button)
     }
     
