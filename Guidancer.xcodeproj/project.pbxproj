@@ -17,6 +17,8 @@
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
 		11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */; };
+		F86A52352912986700FD5D7D /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A52342912986700FD5D7D /* GButton.swift */; };
+		F86A5237291298FB00FD5D7D /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A5236291298FB00FD5D7D /* GLabel.swift */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C6A291115CA007AFFF4 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F86A52342912986700FD5D7D /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
+		F86A5236291298FB00FD5D7D /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F86A52382912990400FD5D7D /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				F86A5236291298FB00FD5D7D /* GLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		F8A11C5A291115CA007AFFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
+				F86A52382912990400FD5D7D /* Labels */,
 				11661CF72911BFC00009D41E /* Utils */,
 				F8F42BFD2911937500679E15 /* Buttons */,
 			);
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F42BF92911862700679E15 /* GRectangleButton.swift */,
+				F86A52342912986700FD5D7D /* GButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -285,10 +299,12 @@
 				11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */,
 				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
+				F86A5237291298FB00FD5D7D /* GLabel.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
+				F86A52352912986700FD5D7D /* GButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
