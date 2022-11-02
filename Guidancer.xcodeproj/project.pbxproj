@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F86A52332912661300FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A52322912661300FD5D7D /* UIView++.swift */; };
+		11661CF22911BDE20009D41E /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */; };
+		11661CF32911BDE20009D41E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */; };
+		11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */; };
+		11661CF52911BDE20009D41E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF02911BDE20009D41E /* Montserrat-Regular.ttf */; };
+		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
+		11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */; };
+		11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C112912776E00387AF1 /* XCFonts+Generated.swift */; };
+		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
+		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C6A291115CA007AFFF4 /* ViewController.swift */; };
@@ -30,7 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F86A52322912661300FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
+		11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		11661CF02911BDE20009D41E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		11E00C112912776E00387AF1 /* XCFonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCFonts+Generated.swift"; sourceTree = "<group>"; };
+		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
+		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,18 +70,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F86A5231291265C500FD5D7D /* Extensions */ = {
+		11661CE22911BB3B0009D41E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				F86A52322912661300FD5D7D /* UIView++.swift */,
+				11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */,
+				11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */,
+				11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */,
+				11661CF02911BDE20009D41E /* Montserrat-Regular.ttf */,
+				11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */,
 			);
-			name = Extensions;
-			path = Application;
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		11661CF72911BFC00009D41E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				11E00C112912776E00387AF1 /* XCFonts+Generated.swift */,
+				11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */,
+				11E00C132912788000387AF1 /* UIFont++.swift */,
+				11E00C152912789F00387AF1 /* UIColor++.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F8A11C5A291115CA007AFFF4 = {
 			isa = PBXGroup;
 			children = (
+				11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */,
 				F8A11C65291115CA007AFFF4 /* Guidancer */,
 				F8F42BF829116CF300679E15 /* GuidancerUI */,
 				F8A11C64291115CA007AFFF4 /* Products */,
@@ -93,6 +126,7 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
+				11661CF72911BFC00009D41E /* Utils */,
 				F8F42BFD2911937500679E15 /* Buttons */,
 			);
 			path = GuidancerUI;
@@ -101,6 +135,7 @@
 		F8F42BFB291192D900679E15 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11661CE22911BB3B0009D41E /* Fonts */,
 				F8A11C6F291115CC007AFFF4 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -155,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A11C77291115CC007AFFF4 /* Build configuration list for PBXNativeTarget "Guidancer" */;
 			buildPhases = (
+				11661CFA2911C10B0009D41E /* SwiftGen */,
 				F8A11C5F291115CA007AFFF4 /* Sources */,
 				F8A11C60291115CA007AFFF4 /* Frameworks */,
 				F8A11C61291115CA007AFFF4 /* Resources */,
@@ -207,20 +243,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11661CF52911BDE20009D41E /* Montserrat-Regular.ttf in Resources */,
+				11661CF32911BDE20009D41E /* Montserrat-Bold.ttf in Resources */,
+				11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */,
+				11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */,
+				11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */,
 				F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */,
+				11661CF22911BDE20009D41E /* Montserrat-ExtraBold.ttf in Resources */,
 				F8A11C70291115CC007AFFF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11661CFA2911C10B0009D41E /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8A11C5F291115CA007AFFF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */,
+				11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */,
 				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
+				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
+				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F86A52332912661300FD5D7D /* UIView++.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,

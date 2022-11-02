@@ -3,3 +3,4 @@ Pods/
 xcuserdata/
 .xcworkspace
 .build/
+.DS_Store
