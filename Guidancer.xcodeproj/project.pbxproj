@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F86A52332912661300FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A52322912661300FD5D7D /* UIView++.swift */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C6A291115CA007AFFF4 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F86A52322912661300FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F86A5231291265C500FD5D7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F86A52322912661300FD5D7D /* UIView++.swift */,
+			);
+			name = Extensions;
+			path = Application;
+			sourceTree = "<group>";
+		};
 		F8A11C5A291115CA007AFFF4 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +81,7 @@
 		F8A11C65291115CA007AFFF4 /* Guidancer */ = {
 			isa = PBXGroup;
 			children = (
+				F86A5231291265C500FD5D7D /* Extensions */,
 				F8F42BFC2911932100679E15 /* Application */,
 				F8F42BFF291193AA00679E15 /* Modules */,
 				F8F42BFB291192D900679E15 /* Resources */,
@@ -210,6 +222,7 @@
 				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
+				F86A52332912661300FD5D7D /* UIView++.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

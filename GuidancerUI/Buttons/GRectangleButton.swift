@@ -27,7 +27,9 @@ class GRectangleButton: UIButton {
         backgroundColor = .black
         setTitle(title, for: .normal)
         layer.cornerRadius = 16
-        addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        if didTap != nil {
+            addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        }
     }
     
     @objc private func buttonTapped() {
