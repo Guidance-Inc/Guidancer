@@ -11,11 +11,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .gYellow
         let button = GRectangleButton(title: "Done", didTap: burfsdf)
         button.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
         button.center = view.center
-        button.titleLabel?.font = UIFont(name: "Montserrat-Regular", size: 32)
+        button.titleLabel?.font = FontFamily.Montserrat.extraBold.font(size: 18.0)
         view.addSubview(button)
     }
     
