@@ -42,7 +42,6 @@ extension UIView {
 
     func embed(in view: UIView, with padding: Padding? = nil) {
 
-        let a = UIRectEdge()
         var top: CGFloat {
             switch padding {
             case .all(let value):
