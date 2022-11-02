@@ -7,34 +7,22 @@
 
 import UIKit
 
-class GRectangleButton: UIButton {
+class GRectangleButton: GButton {
     
     init(title: String,
          frame: CGRect = .zero,
-         didTap: ((GRectangleButton) -> Void)? = nil
+         didTap: ((UIButton) -> Void)? = nil
     ) {
         self.title = title
-        self.didTap = didTap
-        super.init(frame: frame)
-        configure()
+        super.init(didTap: didTap, frame: frame)
     }
     
     let title: String
     
-    let didTap: ((GRectangleButton) -> Void)?
-    
-    private func configure() {
-        backgroundColor = .black
+    override func configureUI() {
+        backgroundColor = .gBlack
         setTitle(title, for: .normal)
         layer.cornerRadius = 16
-        if didTap != nil {
-            addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        }
-    }
-    
-    @objc private func buttonTapped() {
-        guard let didTap = didTap else { return }
-        didTap(self)
     }
     
     required init?(coder: NSCoder) {
