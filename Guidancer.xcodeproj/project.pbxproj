@@ -17,6 +17,7 @@
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
 		11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */; };
+		F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523A29129E2D00FD5D7D /* UIView++.swift */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C6A291115CA007AFFF4 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F86A523A29129E2D00FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +89,18 @@
 			children = (
 				11E00C112912776E00387AF1 /* XCFonts+Generated.swift */,
 				11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F86A523929129E1B00FD5D7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F86A523A29129E2D00FD5D7D /* UIView++.swift */,
 				11E00C132912788000387AF1 /* UIFont++.swift */,
 				11E00C152912789F00387AF1 /* UIColor++.swift */,
 			);
-			path = Utils;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F8A11C5A291115CA007AFFF4 = {
@@ -114,6 +124,7 @@
 		F8A11C65291115CA007AFFF4 /* Guidancer */ = {
 			isa = PBXGroup;
 			children = (
+				F86A523929129E1B00FD5D7D /* Extensions */,
 				F8F42BFC2911932100679E15 /* Application */,
 				F8F42BFF291193AA00679E15 /* Modules */,
 				F8F42BFB291192D900679E15 /* Resources */,
@@ -125,7 +136,6 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
-				11661CF72911BFC00009D41E /* Utils */,
 				F8F42BFD2911937500679E15 /* Buttons */,
 			);
 			path = GuidancerUI;
@@ -134,6 +144,7 @@
 		F8F42BFB291192D900679E15 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11661CF72911BFC00009D41E /* Utils */,
 				11661CE22911BB3B0009D41E /* Fonts */,
 				F8A11C6F291115CC007AFFF4 /* Assets.xcassets */,
 			);
@@ -283,6 +294,7 @@
 			files = (
 				11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */,
 				11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */,
+				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
 				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
