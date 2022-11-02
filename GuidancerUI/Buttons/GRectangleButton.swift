@@ -14,7 +14,7 @@ class GRectangleButton: GButton {
          didTap: ((UIButton) -> Void)? = nil
     ) {
         self.title = title
-        super.init(didTap: didTap, frame: frame)
+        super.init(frame: frame, didTap: didTap)
     }
     
     let title: String
