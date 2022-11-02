@@ -17,9 +17,6 @@ class GButton: UIButton {
         self.didTap = didTap
         super.init(frame: frame)
         configureUI()
-        if didTap != nil {
-            addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        }
     }
     
     let didTap: ((UIButton) -> Void)?
@@ -29,7 +26,9 @@ class GButton: UIButton {
     }
     
     func configureUI() {
-        
+        if didTap != nil {
+            addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        }
     }
     
     @objc private func buttonTapped() {

@@ -9,7 +9,10 @@ import UIKit
 
 class GLabel: UILabel {
     
-    init(text: String, font: UIFont, numberOfLines: Int = 0, frame: CGRect = .zero) {
+    init(text: String, font: UIFont,
+         numberOfLines: Int = 0,
+         frame: CGRect = .zero
+    ) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
         self.text = text
