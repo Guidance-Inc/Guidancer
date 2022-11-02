@@ -16,7 +16,6 @@
 		11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C112912776E00387AF1 /* XCFonts+Generated.swift */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
-		11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */; };
 		F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523A29129E2D00FD5D7D /* UIView++.swift */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
@@ -49,7 +48,6 @@
 		11E00C112912776E00387AF1 /* XCFonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCFonts+Generated.swift"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
-		11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		F86A523A29129E2D00FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 		F8A11C5A291115CA007AFFF4 = {
 			isa = PBXGroup;
 			children = (
-				11EB8CAF2911C6DF00A102A5 /* swiftgen.yml */,
 				F8A11C65291115CA007AFFF4 /* Guidancer */,
 				F8F42BF829116CF300679E15 /* GuidancerUI */,
 				F8A11C64291115CA007AFFF4 /* Products */,
@@ -256,7 +253,6 @@
 				11661CF52911BDE20009D41E /* Montserrat-Regular.ttf in Resources */,
 				11661CF32911BDE20009D41E /* Montserrat-Bold.ttf in Resources */,
 				11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */,
-				11EB8CB02911C6E000A102A5 /* swiftgen.yml in Resources */,
 				11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */,
 				F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */,
 				11661CF22911BDE20009D41E /* Montserrat-ExtraBold.ttf in Resources */,
@@ -283,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+			shellScript = "${PROJECT_DIR}/Generation/bin/swiftgen xcassets Guidancer/Resources/Assets.xcassets --templateName swift5 --output \"Guidancer/Resources/Utils/XCAssets+Generated.swift\" --param forceProvidesNamespaces\n${PROJECT_DIR}/Generation/bin/swiftgen fonts Guidancer/Resources/Fonts --templateName swift5 --output \"Guidancer/Resources/Utils/XCFonts+Generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
