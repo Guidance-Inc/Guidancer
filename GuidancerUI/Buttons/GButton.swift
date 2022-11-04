@@ -11,9 +11,11 @@ import UIKit
 
 class GButton: UIButton {
     
+    
     init(frame: CGRect = .zero,
          didTap: ((UIButton) -> Void)? = nil
     ) {
+     
         self.didTap = didTap
         super.init(frame: frame)
         configureUI()
