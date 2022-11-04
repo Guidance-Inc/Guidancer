@@ -20,6 +20,7 @@ class GRectangleButton: GButton {
     let title: String
     
     override func configureUI() {
+        super.configureUI()
         backgroundColor = .gBlack
         setTitle(title, for: .normal)
         layer.cornerRadius = 16

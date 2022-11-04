@@ -5,8 +5,6 @@
 //  Created by Vladimir Berezin on 02.11.22.
 //
 
-import Foundation
-
 import UIKit
 
 class GButton: UIButton {
