@@ -9,13 +9,13 @@ import UIKit
 
 class GLikeCommentButton: GButton {
     
-    let systemNameImage: String
+    private let icon: UIImage?
     
-    init(systemNameImage: String,
+    init(icon: UIImage?,
          frame: CGRect = .zero,
          didTap: ((UIButton) -> Void)? = nil
     ) {
-        self.systemNameImage = systemNameImage
+        self.icon = icon
         super.init(frame: frame, didTap: didTap)
     }
     
@@ -24,7 +24,9 @@ class GLikeCommentButton: GButton {
     }
     
     override func configureUI() {
-        imageView?.image = UIImage(systemName: systemNameImage)
+        super.configureUI()
+        tintColor = .gBlack
+        imageView?.image = icon
     }
     
 }

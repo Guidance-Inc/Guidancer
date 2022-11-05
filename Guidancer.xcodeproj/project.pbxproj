@@ -17,7 +17,7 @@
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
 		863E34C92914178E008A733D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E34C82914178E008A733D /* CollectionViewCell.swift */; };
-		863E34CB2914181B008A733D /* horizontalSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E34CA2914181B008A733D /* horizontalSV.swift */; };
+		863E34CB2914181B008A733D /* HorizontalSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E34CA2914181B008A733D /* HorizontalSV.swift */; };
 		863E34CD29141826008A733D /* verticalSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E34CC29141826008A733D /* verticalSV.swift */; };
 		86CFED392914517E00A8B09F /* ViewControllerII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFED382914517E00A8B09F /* ViewControllerII.swift */; };
 		86CFED3D2914568500A8B09F /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CFED3C2914568500A8B09F /* GLikeCommentButton.swift */; };
@@ -56,7 +56,7 @@
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		863E34C82914178E008A733D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		863E34CA2914181B008A733D /* horizontalSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horizontalSV.swift; sourceTree = "<group>"; };
+		863E34CA2914181B008A733D /* HorizontalSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSV.swift; sourceTree = "<group>"; };
 		863E34CC29141826008A733D /* verticalSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verticalSV.swift; sourceTree = "<group>"; };
 		86CFED382914517E00A8B09F /* ViewControllerII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerII.swift; sourceTree = "<group>"; };
 		86CFED3C2914568500A8B09F /* GLikeCommentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				863E34C82914178E008A733D /* CollectionViewCell.swift */,
-				863E34CA2914181B008A733D /* horizontalSV.swift */,
+				863E34CA2914181B008A733D /* HorizontalSV.swift */,
 				863E34CC29141826008A733D /* verticalSV.swift */,
 				86CFED382914517E00A8B09F /* ViewControllerII.swift */,
 			);
@@ -336,7 +336,7 @@
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
-				863E34CB2914181B008A733D /* horizontalSV.swift in Sources */,
+				863E34CB2914181B008A733D /* HorizontalSV.swift in Sources */,
 				863E34CD29141826008A733D /* verticalSV.swift in Sources */,
 				86CFED392914517E00A8B09F /* ViewControllerII.swift in Sources */,
 				86CFED3D2914568500A8B09F /* GLikeCommentButton.swift in Sources */,

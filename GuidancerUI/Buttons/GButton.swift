@@ -28,6 +28,7 @@ class GButton: UIButton {
     }
     
     func configureUI() {
+        translatesAutoresizingMaskIntoConstraints = false
         if didTap != nil {
             addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         }
