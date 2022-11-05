@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE9123D29145A2500350BF8 /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE9123C29145A2500350BF8 /* GTextField.swift */; };
 		11661CF22911BDE20009D41E /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */; };
 		11661CF32911BDE20009D41E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */; };
 		11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DE9123C29145A2500350BF8 /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
 		11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -74,6 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DE9123B29145A0F00350BF8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				0DE9123C29145A2500350BF8 /* GTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		0DE912422916E2B200350BF8 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
 		11661CE22911BB3B0009D41E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,8 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
+				0DE912422916E2B200350BF8 /* ContainerView */,
+				0DE9123B29145A0F00350BF8 /* TextField */,
 				F86A523F2912AF9300FD5D7D /* Labels */,
 				F8F42BFD2911937500679E15 /* Buttons */,
 			);
@@ -305,6 +324,7 @@
 				11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */,
 				11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */,
 				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
+				0DE9123D29145A2500350BF8 /* GTextField.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
 				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
