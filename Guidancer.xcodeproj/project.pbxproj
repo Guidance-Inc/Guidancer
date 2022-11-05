@@ -12,16 +12,23 @@
 		11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */; };
 		11661CF52911BDE20009D41E /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF02911BDE20009D41E /* Montserrat-Regular.ttf */; };
 		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
-		11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */; };
-		11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C112912776E00387AF1 /* XCFonts+Generated.swift */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
+		F83836BE291555580089DD0B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BD291555580089DD0B /* Builder.swift */; };
+		F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BF29155B660089DD0B /* RootTabBarController.swift */; };
+		F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D029155FDC0089DD0B /* SigUpViewController.swift */; };
+		F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D229155FE90089DD0B /* LoginViewController.swift */; };
+		F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D92915604A0089DD0B /* UserProfileViewController.swift */; };
+		F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836DB2915609D0089DD0B /* MapViewController.swift */; };
+		F83836DE291567630089DD0B /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836DD291567630089DD0B /* MapRouter.swift */; };
 		F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523A29129E2D00FD5D7D /* UIView++.swift */; };
 		F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523D2912ADCB00FD5D7D /* GButton.swift */; };
 		F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A52402912AFBE00FD5D7D /* GLabel.swift */; };
+		F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AA5282913138F0058E77A /* XCFonts+Generated.swift */; };
+		F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87AA5292913138F0058E77A /* XCAssets+Generated.swift */; };
 		F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C66291115CA007AFFF4 /* AppDelegate.swift */; };
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
-		F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C6A291115CA007AFFF4 /* ViewController.swift */; };
 		F8A11C70291115CC007AFFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C6F291115CC007AFFF4 /* Assets.xcassets */; };
 		F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */; };
 		F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F42BF92911862700679E15 /* GRectangleButton.swift */; };
@@ -46,17 +53,24 @@
 		11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		11661CF02911BDE20009D41E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
-		11E00C112912776E00387AF1 /* XCFonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCFonts+Generated.swift"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		F83836BD291555580089DD0B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		F83836BF29155B660089DD0B /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		F83836D029155FDC0089DD0B /* SigUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigUpViewController.swift; sourceTree = "<group>"; };
+		F83836D229155FE90089DD0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F83836D92915604A0089DD0B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		F83836DB2915609D0089DD0B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F83836DD291567630089DD0B /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		F86A523A29129E2D00FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F86A523D2912ADCB00FD5D7D /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
 		F86A52402912AFBE00FD5D7D /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
+		F87AA5282913138F0058E77A /* XCFonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCFonts+Generated.swift"; sourceTree = "<group>"; };
+		F87AA5292913138F0058E77A /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		F8A11C63291115CA007AFFF4 /* Guidancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A11C66291115CA007AFFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8A11C6A291115CA007AFFF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8A11C6F291115CC007AFFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A11C72291115CC007AFFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A11C74291115CC007AFFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,10 +103,101 @@
 		11661CF72911BFC00009D41E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				11E00C112912776E00387AF1 /* XCFonts+Generated.swift */,
-				11E00C0D2912699A00387AF1 /* XCAssets+Generated.swift */,
+				F87AA5292913138F0058E77A /* XCAssets+Generated.swift */,
+				F87AA5282913138F0058E77A /* XCFonts+Generated.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F83836C129155BE30089DD0B /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				F83836BB291540A70089DD0B /* LoginRouter.swift */,
+				F83836DD291567630089DD0B /* MapRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		F83836CB29155FA70089DD0B /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				F83836CD29155FC00089DD0B /* SignUp */,
+				F83836CC29155FB90089DD0B /* Login */,
+			);
+			name = LoginModule;
+			sourceTree = "<group>";
+		};
+		F83836CC29155FB90089DD0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F83836CF29155FCE0089DD0B /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F83836CD29155FC00089DD0B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F83836CE29155FC70089DD0B /* Controller */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		F83836CE29155FC70089DD0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D029155FDC0089DD0B /* SigUpViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F83836CF29155FCE0089DD0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D229155FE90089DD0B /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F83836D429155FFC0089DD0B /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D62915601F0089DD0B /* UserProfile */,
+				F83836D5291560190089DD0B /* Map */,
+			);
+			name = MapModule;
+			sourceTree = "<group>";
+		};
+		F83836D5291560190089DD0B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D82915602E0089DD0B /* Controller */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		F83836D62915601F0089DD0B /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D7291560290089DD0B /* Controller */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		F83836D7291560290089DD0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F83836D92915604A0089DD0B /* UserProfileViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F83836D82915602E0089DD0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F83836DB2915609D0089DD0B /* MapViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		F86A523929129E1B00FD5D7D /* Extensions */ = {
@@ -164,6 +269,9 @@
 		F8F42BFC2911932100679E15 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F83836C129155BE30089DD0B /* Routers */,
+				F83836BD291555580089DD0B /* Builder.swift */,
+				F83836BF29155B660089DD0B /* RootTabBarController.swift */,
 				F8A11C66291115CA007AFFF4 /* AppDelegate.swift */,
 				F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */,
 				F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */,
@@ -180,28 +288,13 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		F8F42BFE2911938E00679E15 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				F8F42C00291193B800679E15 /* Controller */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		F8F42BFF291193AA00679E15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F8F42BFE2911938E00679E15 /* Login */,
+				F83836D429155FFC0089DD0B /* MapModule */,
+				F83836CB29155FA70089DD0B /* LoginModule */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		F8F42C00291193B800679E15 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F8A11C6A291115CA007AFFF4 /* ViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,17 +395,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E00C0E2912699A00387AF1 /* XCAssets+Generated.swift in Sources */,
-				11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */,
 				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
+				F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */,
+				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
+				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
-				F8A11C6B291115CA007AFFF4 /* ViewController.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
+				F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
+				F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */,
+				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
+				F83836BE291555580089DD0B /* Builder.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
+				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
+				F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */,
+				F83836DE291567630089DD0B /* MapRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
