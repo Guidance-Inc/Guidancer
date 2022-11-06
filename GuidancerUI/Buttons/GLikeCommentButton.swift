@@ -12,11 +12,14 @@ class GLikeCommentButton: GButton {
     private let icon: UIImage?
     
     init(icon: UIImage?,
+         tintColor: UIColor? = .gBlack,
+         
          frame: CGRect = .zero,
          didTap: ((UIButton) -> Void)? = nil
     ) {
         self.icon = icon
         super.init(frame: frame, didTap: didTap)
+        translatesAutoresizingMaskIntoConstraints = false
     }
     
     required init?(coder: NSCoder) {
