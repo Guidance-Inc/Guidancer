@@ -16,7 +16,6 @@
 		11E00C122912776E00387AF1 /* XCFonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C112912776E00387AF1 /* XCFonts+Generated.swift */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
-		3245A7D72914671200B54652 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245A7D62914671200B54652 /* CustomButton.swift */; };
 		F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523A29129E2D00FD5D7D /* UIView++.swift */; };
 		F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A523D2912ADCB00FD5D7D /* GButton.swift */; };
 		F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86A52402912AFBE00FD5D7D /* GLabel.swift */; };
@@ -51,7 +50,6 @@
 		11E00C112912776E00387AF1 /* XCFonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCFonts+Generated.swift"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
-		3245A7D62914671200B54652 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F86A523A29129E2D00FD5D7D /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F86A523D2912ADCB00FD5D7D /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
 		F86A52402912AFBE00FD5D7D /* GLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLabel.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 			children = (
 				F8F42BF92911862700679E15 /* GRectangleButton.swift */,
 				F86A523D2912ADCB00FD5D7D /* GButton.swift */,
-				3245A7D62914671200B54652 /* CustomButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -313,7 +310,6 @@
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
-				3245A7D72914671200B54652 /* CustomButton.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
