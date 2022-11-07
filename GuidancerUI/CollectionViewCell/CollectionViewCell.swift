@@ -10,14 +10,8 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    func setupContent() {
-        descriptionOfPost.usernamePosted(whoAndWhenPost: descriptionOfPost.whoAndWhenPost.text ?? "")
-        informationInPost.setupContent(imageView: informationInPost.imageView,
-                                       bestPlaceOfCityName: informationInPost.bestPlaceOfCityName.text ?? "",
-                                       descriptionOfPlace: informationInPost.descriptionOfPlace.text ?? "")
-    }
-    
-    //MARK: - Init
+    private let informationInPost = DescriptionPostSV()
+    private let descriptionOfPost = ChangableInfoOfPostSV()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,50 +23,11 @@ class CollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    //MARK: - UI elements
-    
-    private let informationInPost: DescriptionPostSV = {
-        let sv = DescriptionPostSV(spacing: 5.0,
-                            distribution: .equalCentering,
-                            axis: .vertical,
-                            aligment: .firstBaseline)
-        return sv
-    }()
-    
-    
-    
-    private let descriptionOfPost: ChangableInfoOfPostSV = {
-        let sv = ChangableInfoOfPostSV(spacing: 5.0,
-                            distribution: .fill,
-                            axis: .horizontal,
-                            aligment: .center)
-        return sv
-    }()
-    
-    
-    //MARK: - Realize UI elements
-    
-    
     private func setup() {
-        
-        addSubview(informationInPost)
-        addSubview(descriptionOfPost)
-        
-        NSLayoutConstraint.activate([
-            informationInPost.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-            informationInPost.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-            trailingAnchor.constraint(equalTo: informationInPost.trailingAnchor, constant: 0),
-            
-            descriptionOfPost.topAnchor.constraint(equalTo: informationInPost.bottomAnchor, constant: 15),
-            descriptionOfPost.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            trailingAnchor.constraint(equalTo: descriptionOfPost.trailingAnchor, constant: 10),
-            bottomAnchor.constraint(equalTo: descriptionOfPost.bottomAnchor, constant: 10)
-            
-            
-        ])
+        let sv = UIStackView(arrangedSubviews: [informationInPost, descriptionOfPost])
+        sv.axis = .vertical
+        sv.embed(in: contentView)
     }
-    
     
     private func cornerAndBorder() {
         self.layer.cornerRadius = 25
@@ -81,39 +36,25 @@ class CollectionViewCell: UICollectionViewCell {
         
     }
     
-    //MARK: - CLASSES
+    func setupContent(image: UIImage?,
+                      name: String,
+                      descriptionOfPlace: String,
+                      whoAndWhenPost: String,
+                      likes: Int,
+                      comments: Int
+    ) {
+        informationInPost.setupContent(image: image,
+                                       bestPlaceOfCityName: name,
+                                       descriptionOfPlace: descriptionOfPlace)
+        descriptionOfPost.setupContent(whoAndWhenPost: whoAndWhenPost,
+                                       likes: likes,
+                                       comments: comments)
+    }
     
     class DescriptionPostSV: UIStackView {
-
-        private let spacingBetween: CGFloat
-        private let distributionSV: UIStackView.Distribution
-        private let axisSV: NSLayoutConstraint.Axis
-        private let aligment: UIStackView.Alignment
-        
-        init(spacing: CGFloat,
-             distribution: UIStackView.Distribution,
-             axis: NSLayoutConstraint.Axis,
-             aligment: UIStackView.Alignment,
-             frame: CGRect = .zero
-        ) {
-            
-            self.spacingBetween = spacing
-            self.distributionSV = distribution
-            self.axisSV = axis
-            self.aligment = aligment
-            super.init(frame: frame)
-        
-        }
-        
-        required init(coder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
-        }
-
-
-        // make UIView
-         var imageView: UIImageView = {
+    
+        private var imageView: UIImageView = {
             let image = UIImageView()
-            image.image = UIImage(named: "rest")!
             image.clipsToBounds = true
             image.layer.cornerRadius = 25.0
             image.translatesAutoresizingMaskIntoConstraints = false
@@ -121,22 +62,28 @@ class CollectionViewCell: UICollectionViewCell {
             return image
         }()
         
+        private let bestPlaceOfCityName = GLabel(text: "Лучшие итальянские рестораны Санкт-Петербурга",
+                                                 font: UIFont.systemFont(ofSize: 17, weight: .regular),
+                                                 numberOfLines: 0)
         
-         var bestPlaceOfCityName: GLabel = {
-            let label = GLabel(text: "Лучшие итальянские рестораны Санкт-Петербурга",
-                               font: UIFont.systemFont(ofSize: 17, weight: .regular),
-                               numberOfLines: 0)
-            return label
-        }()
-
-         var descriptionOfPlace: GLabel = {
-            let label = GLabel(text: "В этой прогулке я расскажу вам о лучших итальяннских ресторанах города СПб. Да, это не аудиопрогулка, но зато какой интересный рассказ...",
-                               font: UIFont.systemFont(ofSize: 15, weight: .light),
-                               numberOfLines: 0)
-            return label
-        }()
+        private let descriptionOfPlace = GLabel(text: "В этой прогулке я расскажу вам о лучших итальяннских ресторанах города СПб. Да, это не аудиопрогулка, но зато какой интересный рассказ...",
+                                                font: UIFont.systemFont(ofSize: 15, weight: .light),
+                                                numberOfLines: 0)
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            setup()
+        }
+        
+        required init(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
         
         private func setup() {
+            spacing = 5
+            distribution = .equalCentering
+            axis = .vertical
+            alignment = .firstBaseline
             addArrangedSubview(imageView)
             addArrangedSubview(bestPlaceOfCityName)
             addArrangedSubview(descriptionOfPlace)
@@ -147,79 +94,110 @@ class CollectionViewCell: UICollectionViewCell {
             ])
         }
         
-            func setupContent(imageView: UIImageView, bestPlaceOfCityName: String, descriptionOfPlace: String) {
-            self.imageView = imageView
+        func setupContent(image: UIImage?,
+                          bestPlaceOfCityName: String,
+                          descriptionOfPlace: String
+        ) {
+            self.imageView.image = image
             self.bestPlaceOfCityName.text = bestPlaceOfCityName
             self.descriptionOfPlace.text = descriptionOfPlace
         }
+        
     }
     
     
-    class ChangableInfoOfPostSV: UIStackView {
+    class ChangableInfoOfPostSV: UIView {
         
-        private let spacingBetween: CGFloat
-        private let distributionSV: UIStackView.Distribution
-        private let axisSV: NSLayoutConstraint.Axis
-        private let aligment: UIStackView.Alignment
+        private let whoAndWhenPost = GLabel(font: UIFont.systemFont(ofSize: 12, weight: .light),
+                                            fontColor: .gGray)
         
-        init(spacing: CGFloat,
-             distribution: UIStackView.Distribution,
-             axis: NSLayoutConstraint.Axis,
-             aligment: UIStackView.Alignment,
-             frame: CGRect = .zero
-        ) {
-            
-            self.spacingBetween = spacing
-            self.distributionSV = distribution
-            self.axisSV = axis
-            self.aligment = aligment
+        private let likesNumber = GLabel(font: .regular14)
+        
+        private let commentNumber = GLabel(font: .regular14)
+        
+        private let commentImage = GLikeCommentButton(icon: UIImage(systemName: "heart"))
+        private let heartImage = GLikeCommentButton(icon: UIImage(systemName: "star"))
+        
+        override init(frame: CGRect) {
             super.init(frame: frame)
-            
+            setup()
         }
         
         required init(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
         
-        var whoAndWhenPost: GLabel = {
-            let label = GLabel(text: "Feliks Omarov 2 дня назад",
-                               font: UIFont.systemFont(ofSize: 12, weight: .light),
-                               fontColor: .gGray)
-            return label
-        }()
-        
-        private  var likesNumber: GLabel = {
-            let label = GLabel(text: "228",
-                               font: .regular14)
-            return label
-        }()
-        
-        private var commentNumber: GLabel = {
-            let label = GLabel(text: "228",
-                               font: UIFont.systemFont(ofSize: 12, weight: .regular))
-            return label
-        }()
-        
-        
-        private let commentImage = GLikeCommentButton(icon: UIImage(systemName: "text.bubble"))
-        private let heartImage = GLikeCommentButton(icon: UIImage(systemName: "heart"))
-        
-        
         private func setup() {
-            addArrangedSubview(whoAndWhenPost)
-            addArrangedSubview(likesNumber)
-            addArrangedSubview(heartImage)
-            addArrangedSubview(commentNumber)
-            addArrangedSubview(commentImage)
+            likesNumber.setSize(width: 30)
+            commentNumber.setSize(width: 30)
+            let stack = UIStackView(arrangedSubviews: [whoAndWhenPost, likesNumber, heartImage, commentNumber, commentImage])
+            stack.alignment = .fill
+            stack.axis = .horizontal
+            stack.distribution = .fillProportionally
+            stack.spacing = 5
+            stack.embed(in: self, with: .padding(top: 15, right: 10, bottom: 10, left: 10))
         }
         
-        func usernamePosted(whoAndWhenPost: String) {
+        func setupContent(whoAndWhenPost: String,
+                          likes: Int,
+                          comments: Int) {
             self.whoAndWhenPost.text = whoAndWhenPost
+            commentNumber.text = String(comments)
+            likesNumber.text = String(likes)
         }
     }
     
 }
 
+//MARK: - TestCollectionView
+
+class TestCollectionView: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var collectionView: UICollectionView!
+    var cellIdentifier = "Cell"
+    let padding: CGFloat = 50.0
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Create an instance of UICollectionViewFlowLayout since you cant
+        // Initialize UICollectionView without a layout
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0 , right: 0)
+        layout.itemSize = CGSize(width: 350, height: 350)
+        
+        
+        
+        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.backgroundColor = UIColor.white
+        
+        self.view.addSubview(collectionView)
+        
+    }
+}
+
+extension TestCollectionView {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath as IndexPath) as! CollectionViewCell
+        cell.setupContent(image: UIImage(systemName: "star"),
+                          name: "Post Name",
+                          descriptionOfPlace: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+                          whoAndWhenPost: "Test who send",
+                          likes: 200, comments: 250)
+        return cell
+    }
+    
+}
 
 
 

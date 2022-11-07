@@ -19,7 +19,6 @@ class GLikeCommentButton: GButton {
     ) {
         self.icon = icon
         super.init(frame: frame, didTap: didTap)
-        translatesAutoresizingMaskIntoConstraints = false
     }
     
     required init?(coder: NSCoder) {
@@ -29,7 +28,8 @@ class GLikeCommentButton: GButton {
     override func configureUI() {
         super.configureUI()
         tintColor = .gBlack
-        imageView?.image = icon
+        setImage(icon, for: .normal)
+        setSize(width: 18.7, height: 18.7)
     }
     
 }
