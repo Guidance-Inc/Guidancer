@@ -9,9 +9,11 @@ import UIKit
 
 class GButton: UIButton {
     
+    
     init(frame: CGRect = .zero,
          didTap: ((UIButton) -> Void)? = nil
     ) {
+     
         self.didTap = didTap
         super.init(frame: frame)
         configureUI()
@@ -24,6 +26,7 @@ class GButton: UIButton {
     }
     
     func configureUI() {
+        translatesAutoresizingMaskIntoConstraints = false
         if didTap != nil {
             addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         }

@@ -14,6 +14,8 @@
 		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */; };
+		F82A6BB72919208600863F78 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BB62919208600863F78 /* CollectionViewCell.swift */; };
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
 		F83836BE291555580089DD0B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BD291555580089DD0B /* Builder.swift */; };
 		F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BF29155B660089DD0B /* RootTabBarController.swift */; };
@@ -55,6 +57,8 @@
 		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
+		F82A6BB62919208600863F78 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F83836BD291555580089DD0B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		F83836BF29155B660089DD0B /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 				F87AA5282913138F0058E77A /* XCFonts+Generated.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F82A6BB32919205F00863F78 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F82A6BB62919208600863F78 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		F83836C129155BE30089DD0B /* Routers */ = {
@@ -250,6 +262,7 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
+				F82A6BB32919205F00863F78 /* CollectionViewCell */,
 				F86A523F2912AF9300FD5D7D /* Labels */,
 				F8F42BFD2911937500679E15 /* Buttons */,
 			);
@@ -283,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F42BF92911862700679E15 /* GRectangleButton.swift */,
+				F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */,
 				F86A523D2912ADCB00FD5D7D /* GButton.swift */,
 			);
 			path = Buttons;
@@ -399,11 +413,13 @@
 				F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */,
 				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
+				F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
 				F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */,
+				F82A6BB72919208600863F78 /* CollectionViewCell.swift in Sources */,
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
 				F83836BE291555580089DD0B /* Builder.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,

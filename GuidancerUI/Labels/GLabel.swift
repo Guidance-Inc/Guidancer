@@ -9,7 +9,9 @@ import UIKit
 
 class GLabel: UILabel {
     
-    init(text: String, font: UIFont,
+    init(text: String? = nil,
+         font: UIFont,
+         fontColor: UIColor? = .gBlack,
          numberOfLines: Int = 0,
          frame: CGRect = .zero
     ) {
