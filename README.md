@@ -9,7 +9,7 @@ Instructions to start working on Guidancer
 
 ### Desings :paintbrush:
 
-- [Figma](https://www.figma.com/file/WUTl7PZUm5QvmQtXuC0dON/Untitled?node-id=0%3A1)
+- [Figma](https://www.figma.com/file/4PLVzvAr1aRsftXR0Ys3l1/Untitled?node-id=2%3A116)
 
 ### Requirements 🚧
 
