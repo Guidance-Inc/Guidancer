@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D04626A2930D48E009DB6AC /* GTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0462692930D48E009DB6AC /* GTextField.swift */; };
+		0D04626C2930EC5D009DB6AC /* HaveAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04626B2930EC5D009DB6AC /* HaveAccountButton.swift */; };
 		11661CF22911BDE20009D41E /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */; };
 		11661CF32911BDE20009D41E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */; };
 		11661CF42911BDE20009D41E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */; };
@@ -50,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0462692930D48E009DB6AC /* GTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTextField.swift; sourceTree = "<group>"; };
+		0D04626B2930EC5D009DB6AC /* HaveAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveAccountButton.swift; sourceTree = "<group>"; };
 		11661CED2911BDE20009D41E /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		11661CEE2911BDE20009D41E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		11661CEF2911BDE20009D41E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0462682930D47D009DB6AC /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				0D0462692930D48E009DB6AC /* GTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		11661CE22911BB3B0009D41E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +274,7 @@
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
 			isa = PBXGroup;
 			children = (
+				0D0462682930D47D009DB6AC /* TextField */,
 				F82A6BB32919205F00863F78 /* CollectionViewCell */,
 				F86A523F2912AF9300FD5D7D /* Labels */,
 				F8F42BFD2911937500679E15 /* Buttons */,
@@ -298,6 +311,7 @@
 				F8F42BF92911862700679E15 /* GRectangleButton.swift */,
 				F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */,
 				F86A523D2912ADCB00FD5D7D /* GButton.swift */,
+				0D04626B2930EC5D009DB6AC /* HaveAccountButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -415,6 +429,7 @@
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
 				F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
+				0D04626A2930D48E009DB6AC /* GTextField.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
 				F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
@@ -429,6 +444,7 @@
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
 				F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */,
 				F83836DE291567630089DD0B /* MapRouter.swift in Sources */,
+				0D04626C2930EC5D009DB6AC /* HaveAccountButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
