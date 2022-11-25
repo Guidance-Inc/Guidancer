@@ -9,33 +9,35 @@ import UIKit
 
 class PostCollectionViewCell: UICollectionViewCell {
     
-    private let informationInPost = DescriptionPostSV()
-    private let descriptionOfPost = ChangableInfoOfPostSV()
+     let informationInPost = DescriptionPostSV()
+     let descriptionOfPost = ChangableInfoOfPostSV()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
-        cornerAndBorder()
+        cornerAndShadow()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setup() {
-        let sv = UIStackView(arrangedSubviews: [informationInPost, descriptionOfPost])
+     func setup() {
+         let sv = UIStackView(arrangedSubviews: [informationInPost, descriptionOfPost])
         sv.axis = .vertical
         sv.embed(in: contentView)
     }
     
-    private func cornerAndBorder() {
+     func cornerAndShadow() {
         self.layer.cornerRadius = 25
-        self.layer.borderWidth = 0.5
-        self.layer.borderColor = UIColor.black.cgColor
-        
+        self.backgroundColor = .white
+        self.layer.shadowOffset = CGSize(width: 2.5, height: 2.5)
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowRadius = 7
+        self.layer.shadowColor = UIColor.gBlack?.cgColor
     }
     
-    func setupContent(image: UIImage?,
+    func setupContentForSearch(image: UIImage?,
                       name: String,
                       descriptionOfPlace: String,
                       whoAndWhenPost: String,
@@ -52,6 +54,15 @@ class PostCollectionViewCell: UICollectionViewCell {
                                        comments: comments)
     }
     
+    func setupContentForProfile(image: UIImage?,
+                                 name: String,
+                                 descriptionOfPlace: String
+    ) {
+        informationInPost.setupContent(image: image,
+                                       bestPlaceOfCityName: name,
+                                       descriptionOfPlace: descriptionOfPlace)
+    }
+    
     class DescriptionPostSV: UIStackView {
         
 //        private let viewMoreButton: GButton = {
@@ -66,7 +77,7 @@ class PostCollectionViewCell: UICollectionViewCell {
                              
                              
                              
-        private var imageView: UIImageView = {
+         var imageView: UIImageView = {
             let image = UIImageView()
             image.clipsToBounds = true
             image.layer.cornerRadius = 25.0
@@ -75,11 +86,11 @@ class PostCollectionViewCell: UICollectionViewCell {
             return image
         }()
         
-        private let bestPlaceOfCityName = GLabel(text: "Лучшие итальянские рестораны Санкт-Петербурга",
+         let bestPlaceOfCityName = GLabel(text: "Лучшие итальянские рестораны Санкт-Петербурга",
                                                  font: UIFont.systemFont(ofSize: 17, weight: .regular),
                                                  numberOfLines: 0)
         
-        private let descriptionOfPlace = GLabel(text: "В этой прогулке я расскажу вам о лучших итальяннских ресторанах города СПб. Да, это не аудиопрогулка, но зато какой интересный рассказ...",
+         let descriptionOfPlace = GLabel(text: "В этой прогулке я расскажу вам о лучших итальяннских ресторанах города СПб. Да, это не аудиопрогулка, но зато какой интересный рассказ...",
                                                 font: UIFont.systemFont(ofSize: 15, weight: .light),
                                                 numberOfLines: 0)
         
@@ -101,7 +112,7 @@ class PostCollectionViewCell: UICollectionViewCell {
 //
 //        }
      
-        private func setup() {
+         func setup() {
    
             spacing = 5
             distribution = .equalCentering
@@ -145,15 +156,15 @@ class PostCollectionViewCell: UICollectionViewCell {
             profileUserImageView.layer.cornerRadius = 10
             self.clipsToBounds = true
         }
-        private let whoAndWhenPost = GLabel(font: UIFont.systemFont(ofSize: 12, weight: .light),
+         let whoAndWhenPost = GLabel(font: UIFont.systemFont(ofSize: 12, weight: .light),
                                             fontColor: .gGray)
         
-        private let likesNumber = GLabel(font: .regular14)
+         let likesNumber = GLabel(font: .regular14)
         
-        private let commentNumber = GLabel(font: .regular14)
+         let commentNumber = GLabel(font: .regular14)
         
-        private let commentImage = GLikeCommentButton(icon: UIImage(systemName: "heart"))
-        private let heartImage = GLikeCommentButton(icon: UIImage(systemName: "text.bubble"))
+         let commentImage = GLikeCommentButton(icon: UIImage(systemName: "heart"))
+         let heartImage = GLikeCommentButton(icon: UIImage(systemName: "text.bubble"))
         
         override init(frame: CGRect) {
             super.init(frame: frame)
@@ -194,17 +205,15 @@ class TestCollectionViewII: UIViewController, UICollectionViewDataSource, UIColl
     
     var collectionView: UICollectionView!
     var cellIdentifier = "Cell"
-    let padding: CGFloat = 50.0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItems = [editButtonItem]
         // Create an instance of UICollectionViewFlowLayout since you cant
         // Initialize UICollectionView without a layout
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0 , right: 0)
-        layout.itemSize = CGSize(width: 350, height: 250)
+        layout.itemSize = CGSize(width: 350, height: 200)
         
        
         
@@ -222,12 +231,12 @@ class TestCollectionViewII: UIViewController, UICollectionViewDataSource, UIColl
 extension TestCollectionViewII {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath as IndexPath) as! PostCollectionViewCell
-        cell.setupContent(image: UIImage(named: "sight"),
+        cell.setupContentForSearch(image: UIImage(named: "sight"),
                           name: "Московский Кремль",
                           descriptionOfPlace: "Моско́вский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города, официальная резиденция Президента Российской Федерации, вплоть до распада СССР в декабре 1991 года была официальной резиденцией Генерального секретаря ЦК КПСС.",
                           whoAndWhenPost: "Artyom Korotkov",
