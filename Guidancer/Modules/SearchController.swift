@@ -11,8 +11,6 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
     
     var horizontalCollectionView: UICollectionView!
     var collectionView1: UICollectionView!
-    let horizontalCellIdentifier = "Cell1"
-    let vericalCellIdentifier = "Cell"
     let searchController = UISearchController()
     let horizontalLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -24,6 +22,9 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         setupBarButtonItem()
         setupSearch()
         setupHorizontalLayout()
+
+        print("identifier: \(SearchScreenCollectionViewCell.identifier)")
+        print("identifier: \(PostCollectionViewCell.identifier)")
     }
     
     @objc private func backSegue() {
@@ -31,7 +32,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
     }
     
     private func setupSearch() {
-//        title = "Popular"
+        //        title = "Popular"
     }
     
     private func setupBarButtonItem() {
@@ -44,7 +45,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
             item.tintColor = .gBlack
             return item
         }()
-//   title!     navigationController?.navigationBar.prefersLargeTitles = true
+        //   title!     navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
         navigationItem.leftBarButtonItems = [buttomItem]
     }
@@ -71,7 +72,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         horizontalCollectionView.dataSource = self
         horizontalCollectionView.delegate = self
         horizontalCollectionView.register(PostCollectionViewCell.self,
-                                          forCellWithReuseIdentifier: horizontalCellIdentifier)
+                                          forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         self.view.addSubview(horizontalCollectionView)
         
         
@@ -83,7 +84,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
         layout.scrollDirection = .vertical
         collectionView1.dataSource = self
         collectionView1.delegate = self
-        collectionView1.register(SearchScreenCollectionViewCell.self, forCellWithReuseIdentifier: vericalCellIdentifier)
+        collectionView1.register(SearchScreenCollectionViewCell.self, forCellWithReuseIdentifier: SearchScreenCollectionViewCell.identifier)
         collectionView1.showsVerticalScrollIndicator = false
         self.view.addSubview(collectionView1)
         
@@ -120,24 +121,24 @@ extension SearchController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionView1 {
             
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: vericalCellIdentifier,
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchScreenCollectionViewCell.identifier,
                                                           for: indexPath) as! SearchScreenCollectionViewCell
-            cell.setupContentForProfile(image: UIImage(named: "sight"),
-                                        name: "Московский Кремль",
-                                        descriptionOfPlace: "Моско́вский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города, официальная резиденция Президента Российской Федерации, вплоть до распада СССР в декабре 1991 года была официальной резиденцией Генерального секретаря ЦК КПСС.")
+            cell.setupContent(image:  UIImage(named: "sight"),
+                              name: "Moscow Cremel",
+                              descriptionOfPlace: "Pretend that you see the descriprion of place please",
+                              whoAndWhenPost: "Artyom Korotkov",
+                              profileUserImageView: UIImage(named: "sight"),
+                              likes: 8,
+                              comments: 8)
+
             return cell
-            
         } else {
             
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: horizontalCellIdentifier,
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier,
                                                           for: indexPath) as! PostCollectionViewCell
-            cell.setupContentForSearch(image:  UIImage(named: "sight"),
-                                       name: "Moscow Cremel",
-                                       descriptionOfPlace: "Pretend that you see the descriprion of place please",
-                                       whoAndWhenPost: "Artyom Korotkov",
-                                       profileUserImageView: UIImage(named: "sight"),
-                                       likes: 8,
-                                       comments: 8)
+            cell.setupContent(image: UIImage(named: "sight"),
+                              name: "Московский Кремль",
+                              descriptionOfPlace: "Моско́вский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города, официальная резиденция Президента Российской Федерации, вплоть до распада СССР в декабре 1991 года была официальной резиденцией Генерального секретаря ЦК КПСС.")
             return cell
         }
     }

@@ -7,9 +7,8 @@
 
 import UIKit
 
-
 class CollectionViewCell: UICollectionViewCell {
-    
+
     private let informationInPost = DescriptionPostSV()
     private let descriptionOfPost = ChangableInfoOfPostSV()
     

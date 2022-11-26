@@ -36,6 +36,7 @@
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C70291115CC007AFFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C6F291115CC007AFFF4 /* Assets.xcassets */; };
 		F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */; };
+		F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */; };
 		F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F42BF92911862700679E15 /* GRectangleButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		F8A11C6F291115CC007AFFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A11C72291115CC007AFFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A11C74291115CC007AFFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8F42BF92911862700679E15 /* GRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRectangleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F82A6BB62919208600863F78 /* CollectionViewCell.swift */,
+				F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */,
 				863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */,
 				8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */,
 			);
@@ -444,6 +447,7 @@
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
+				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
