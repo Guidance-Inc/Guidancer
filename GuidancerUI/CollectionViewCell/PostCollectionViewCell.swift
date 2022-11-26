@@ -28,7 +28,7 @@ class PostCollectionViewCell: GCollectionViewCell {
         contentStackView.embed(in: contentView)
     }
     
-    private  func cornerAndShadow() {
+    private func cornerAndShadow() {
         self.layer.cornerRadius = 25
         self.backgroundColor = .white
         self.layer.shadowOffset = CGSize(width: 2.5, height: 2.5)
@@ -37,13 +37,10 @@ class PostCollectionViewCell: GCollectionViewCell {
         self.layer.shadowColor = UIColor.gBlack?.cgColor
     }
     
-    func setupContent(image: UIImage?,
-                      name: String,
-                      descriptionOfPlace: String
-    ) {
-        informationInPost.setupContent(image: image,
-                                       bestPlaceOfCityName: name,
-                                       descriptionOfPlace: descriptionOfPlace)
+    func setupContent(post: GPost) {
+        informationInPost.setupContent(image: post.image,
+                                       bestPlaceOfCityName: post.name,
+                                       descriptionOfPlace: post.descriptionOfPlace)
     }
     
     private final class DescriptionPostSV: UIStackView {
@@ -94,48 +91,4 @@ class PostCollectionViewCell: GCollectionViewCell {
         }
     }
     
-}
-
-//MARK: - TestCollectionView
-
-class TestCollectionViewII: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    var collectionView: UICollectionView!
-    var cellIdentifier = "Cell"
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Create an instance of UICollectionViewFlowLayout since you cant
-        // Initialize UICollectionView without a layout
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0 , right: 0)
-        layout.itemSize = CGSize(width: 350, height: 200)
-        
-
-        
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
-        collectionView.showsVerticalScrollIndicator = false
-        collectionView.backgroundColor = UIColor.white
-        self.view.addSubview(collectionView)
-        
-    }
-}
-
-extension TestCollectionViewII {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath as IndexPath) as! PostCollectionViewCell
-        cell.setupContent(image: UIImage(named: "sight"),
-                                   name: "Московский Кремль",
-                                   descriptionOfPlace: "Моско́вский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города, официальная резиденция Президента Российской Федерации, вплоть до распада СССР в декабре 1991 года была официальной резиденцией Генерального секретаря ЦК КПСС.")
-        return cell
-    }
 }

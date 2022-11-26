@@ -120,25 +120,15 @@ extension SearchController {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == collectionView1 {
-            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchScreenCollectionViewCell.identifier,
                                                           for: indexPath) as! SearchScreenCollectionViewCell
-            cell.setupContent(image:  UIImage(named: "sight"),
-                              name: "Moscow Cremel",
-                              descriptionOfPlace: "Pretend that you see the descriprion of place please",
-                              whoAndWhenPost: "Artyom Korotkov",
-                              profileUserImageView: UIImage(named: "sight"),
-                              likes: 8,
-                              comments: 8)
-
+            cell.setupContent(post: .mock)
             return cell
         } else {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier,
                                                           for: indexPath) as! PostCollectionViewCell
-            cell.setupContent(image: UIImage(named: "sight"),
-                              name: "Московский Кремль",
-                              descriptionOfPlace: "Моско́вский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города, официальная резиденция Президента Российской Федерации, вплоть до распада СССР в декабре 1991 года была официальной резиденцией Генерального секретаря ЦК КПСС.")
+            cell.setupContent(post: .mock)
             return cell
         }
     }

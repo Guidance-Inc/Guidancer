@@ -16,20 +16,11 @@ class SearchScreenCollectionViewCell: PostCollectionViewCell {
         contentStackView.addArrangedSubview(informationInPost)
     }
 
-    func setupContent(image: UIImage?,
-                      name: String,
-                      descriptionOfPlace: String,
-                      whoAndWhenPost: String,
-                      profileUserImageView: UIImage?,
-                      likes: Int,
-                      comments: Int
-    ) {
-        super.setupContent(image: image,
-                           name: name,
-                           descriptionOfPlace: descriptionOfPlace)
-        informationInPost.setupContent(whoAndWhenPost: whoAndWhenPost,
-                                       profileUserImageView: profileUserImageView,
-                                       likes: likes, comments: comments)
+    override func setupContent(post: GPost) {
+        super.setupContent(post: post)
+        informationInPost.setupContent(whoAndWhenPost: post.whoAndWhenPost,
+                                       profileUserImageView: post.profileUserImageView,
+                                       likes: post.likes, comments: post.comments)
     }
 
     private final class ChangableInfoOfPostSV: UIView {

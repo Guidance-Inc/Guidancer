@@ -37,6 +37,7 @@
 		F8A11C70291115CC007AFFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C6F291115CC007AFFF4 /* Assets.xcassets */; };
 		F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */; };
 		F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */; };
+		F8C53DF0293211620071D6D8 /* GPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEF293211620071D6D8 /* GPost.swift */; };
 		F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F42BF92911862700679E15 /* GRectangleButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		F8A11C72291115CC007AFFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A11C74291115CC007AFFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8C53DEF293211620071D6D8 /* GPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPost.swift; sourceTree = "<group>"; };
 		F8F42BF92911862700679E15 /* GRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRectangleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,12 +272,21 @@
 			isa = PBXGroup;
 			children = (
 				F86A523929129E1B00FD5D7D /* Extensions */,
+				F8C53DEE293211490071D6D8 /* Model */,
 				F8F42BFC2911932100679E15 /* Application */,
 				F8F42BFF291193AA00679E15 /* Modules */,
 				F8F42BFB291192D900679E15 /* Resources */,
 				F8A11C74291115CC007AFFF4 /* Info.plist */,
 			);
 			path = Guidancer;
+			sourceTree = "<group>";
+		};
+		F8C53DEE293211490071D6D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8C53DEF293211620071D6D8 /* GPost.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
@@ -435,6 +446,7 @@
 				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
 				F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */,
+				F8C53DF0293211620071D6D8 /* GPost.swift in Sources */,
 				863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
