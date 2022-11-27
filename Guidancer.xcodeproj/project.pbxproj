@@ -16,6 +16,7 @@
 		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		32BFF6AF2931F9FA00D9E209 /* GRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BFF6AE2931F9FA00D9E209 /* GRoundButton.swift */; };
 		F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */; };
 		F82A6BB72919208600863F78 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BB62919208600863F78 /* CollectionViewCell.swift */; };
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
@@ -61,6 +62,7 @@
 		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		32BFF6AE2931F9FA00D9E209 /* GRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRoundButton.swift; sourceTree = "<group>"; };
 		F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
 		F82A6BB62919208600863F78 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */,
 				F86A523D2912ADCB00FD5D7D /* GButton.swift */,
 				0D04626B2930EC5D009DB6AC /* HaveAccountButton.swift */,
+				32BFF6AE2931F9FA00D9E209 /* GRoundButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
+				32BFF6AF2931F9FA00D9E209 /* GRoundButton.swift in Sources */,
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
 				F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */,
 				F83836DE291567630089DD0B /* MapRouter.swift in Sources */,
