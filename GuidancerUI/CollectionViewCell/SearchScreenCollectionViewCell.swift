@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchScreenCollectionViewCell: PostCollectionViewCell {
-    ///HELLO REBYATA, ITS TEMA!
+
     private let informationInPost = ChangableInfoOfPostSV()
 
     override func setup() {
