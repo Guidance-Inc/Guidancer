@@ -39,6 +39,7 @@
 		F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */; };
 		F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */; };
 		F8C53DF0293211620071D6D8 /* GPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEF293211620071D6D8 /* GPost.swift */; };
+		F8C53DFA2935486B0071D6D8 /* GRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DF92935486A0071D6D8 /* GRoundButton.swift */; };
 		F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F42BF92911862700679E15 /* GRectangleButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		F8A11C74291115CC007AFFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8C53DEF293211620071D6D8 /* GPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPost.swift; sourceTree = "<group>"; };
+		F8C53DF92935486A0071D6D8 /* GRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRoundButton.swift; sourceTree = "<group>"; };
 		F8F42BF92911862700679E15 /* GRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRectangleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,10 +338,10 @@
 			isa = PBXGroup;
 			children = (
 				F8F42BF92911862700679E15 /* GRectangleButton.swift */,
+				F8C53DF92935486A0071D6D8 /* GRoundButton.swift */,
 				F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */,
 				F86A523D2912ADCB00FD5D7D /* GButton.swift */,
 				0D04626B2930EC5D009DB6AC /* HaveAccountButton.swift */,
-				32BFF6AE2931F9FA00D9E209 /* GRoundButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -464,6 +466,7 @@
 				0D04626A2930D48E009DB6AC /* GTextField.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
 				F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */,
+				F8C53DFA2935486B0071D6D8 /* GRoundButton.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */,
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
@@ -474,7 +477,6 @@
 				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
-				32BFF6AF2931F9FA00D9E209 /* GRoundButton.swift in Sources */,
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
 				F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */,
 				F83836DE291567630089DD0B /* MapRouter.swift in Sources */,
