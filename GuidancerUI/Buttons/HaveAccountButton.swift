@@ -34,7 +34,7 @@ class HaveAccountButton: UIButton {
         
         attributeTitle.append(NSAttributedString(
             string: secondPart,
-            attributes: [NSAttributedString.Key.font: UIFont.medium13, NSAttributedString.Key.foregroundColor: UIColor.gYellow]))
+            attributes: [NSAttributedString.Key.font: UIFont.medium13, NSAttributedString.Key.foregroundColor: UIColor.gYellowGreen]))
         
         button.setAttributedTitle(attributeTitle, for: .normal)
         
