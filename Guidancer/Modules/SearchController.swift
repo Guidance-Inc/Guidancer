@@ -125,7 +125,6 @@ extension SearchController {
             cell.setupContent(post: .mock)
             return cell
         } else {
-            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier,
                                                           for: indexPath) as! PostCollectionViewCell
             cell.setupContent(post: .mock)

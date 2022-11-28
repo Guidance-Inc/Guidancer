@@ -19,6 +19,7 @@ struct GPost {
 
 }
 
+#if DEBUG
 extension GPost {
     static var mock: Self {
         .init(name: "Moscow Kremlin",
@@ -30,3 +31,4 @@ extension GPost {
               comments: 8)
     }
 }
+#endif
