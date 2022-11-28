@@ -16,8 +16,10 @@
 		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */; };
+		8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */; };
+		86A6CA5229310D7500A447DF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6CA5129310D7500A447DF /* SearchController.swift */; };
 		F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */; };
-		F82A6BB72919208600863F78 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BB62919208600863F78 /* CollectionViewCell.swift */; };
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
 		F83836BE291555580089DD0B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BD291555580089DD0B /* Builder.swift */; };
 		F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BF29155B660089DD0B /* RootTabBarController.swift */; };
@@ -35,6 +37,8 @@
 		F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A11C68291115CA007AFFF4 /* SceneDelegate.swift */; };
 		F8A11C70291115CC007AFFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C6F291115CC007AFFF4 /* Assets.xcassets */; };
 		F8A11C73291115CC007AFFF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A11C71291115CC007AFFF4 /* LaunchScreen.storyboard */; };
+		F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */; };
+		F8C53DF0293211620071D6D8 /* GPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C53DEF293211620071D6D8 /* GPost.swift */; };
 		F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F42BF92911862700679E15 /* GRectangleButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +65,10 @@
 		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		86A6CA5129310D7500A447DF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
-		F82A6BB62919208600863F78 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F83836BD291555580089DD0B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		F83836BF29155B660089DD0B /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 		F8A11C6F291115CC007AFFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A11C72291115CC007AFFF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A11C74291115CC007AFFF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8C53DEF293211620071D6D8 /* GPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPost.swift; sourceTree = "<group>"; };
 		F8F42BF92911862700679E15 /* GRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRectangleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,10 +133,20 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		86A6CA5329310D7800A447DF /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				86A6CA5129310D7500A447DF /* SearchController.swift */,
+			);
+			name = SearchModule;
+			sourceTree = "<group>";
+		};
 		F82A6BB32919205F00863F78 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F82A6BB62919208600863F78 /* CollectionViewCell.swift */,
+				F8C53DEC29320CAE0071D6D8 /* GCollectionViewCell.swift */,
+				863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */,
+				8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -263,12 +281,21 @@
 			isa = PBXGroup;
 			children = (
 				F86A523929129E1B00FD5D7D /* Extensions */,
+				F8C53DEE293211490071D6D8 /* Model */,
 				F8F42BFC2911932100679E15 /* Application */,
 				F8F42BFF291193AA00679E15 /* Modules */,
 				F8F42BFB291192D900679E15 /* Resources */,
 				F8A11C74291115CC007AFFF4 /* Info.plist */,
 			);
 			path = Guidancer;
+			sourceTree = "<group>";
+		};
+		F8C53DEE293211490071D6D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8C53DEF293211620071D6D8 /* GPost.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F8F42BF829116CF300679E15 /* GuidancerUI */ = {
@@ -321,6 +348,7 @@
 			children = (
 				F83836D429155FFC0089DD0B /* MapModule */,
 				F83836CB29155FA70089DD0B /* LoginModule */,
+				86A6CA5329310D7800A447DF /* SearchModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -423,22 +451,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */,
 				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
 				F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */,
 				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
 				F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */,
+				F8C53DF0293211620071D6D8 /* GPost.swift in Sources */,
+				863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */,
 				F86A523E2912ADCB00FD5D7D /* GButton.swift in Sources */,
 				0D04626A2930D48E009DB6AC /* GTextField.swift in Sources */,
 				F86A52412912AFBE00FD5D7D /* GLabel.swift in Sources */,
 				F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */,
 				11E00C142912788000387AF1 /* UIFont++.swift in Sources */,
 				F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */,
-				F82A6BB72919208600863F78 /* CollectionViewCell.swift in Sources */,
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
 				F83836BE291555580089DD0B /* Builder.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
+				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
+				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
