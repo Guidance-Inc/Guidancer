@@ -2,7 +2,6 @@
 //  GRoundButton.swift
 //  Guidancer
 //
-//  Created by David Krasnov on 26.11.22.
 //
 
 import UIKit
