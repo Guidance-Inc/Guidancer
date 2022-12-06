@@ -18,6 +18,7 @@
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
 		863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */; };
 		8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */; };
+		867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BAD39293F27A5004C7C96 /* ProfileViewController.swift */; };
 		86A6CA5229310D7500A447DF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6CA5129310D7500A447DF /* SearchController.swift */; };
 		F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */; };
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
@@ -68,6 +69,7 @@
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		867BAD39293F27A5004C7C96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		86A6CA5129310D7500A447DF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 				F87AA5282913138F0058E77A /* XCFonts+Generated.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		867BAD38293F2795004C7C96 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				867BAD39293F27A5004C7C96 /* ProfileViewController.swift */,
+			);
+			name = ProfileModule;
 			sourceTree = "<group>";
 		};
 		86A6CA5329310D7800A447DF /* SearchModule */ = {
@@ -282,12 +292,12 @@
 		F8A11C65291115CA007AFFF4 /* Guidancer */ = {
 			isa = PBXGroup;
 			children = (
+				F8A11C74291115CC007AFFF4 /* Info.plist */,
+				F8F42BFC2911932100679E15 /* Application */,
 				F86A523929129E1B00FD5D7D /* Extensions */,
 				F8C53DEE293211490071D6D8 /* Model */,
-				F8F42BFC2911932100679E15 /* Application */,
 				F8F42BFF291193AA00679E15 /* Modules */,
 				F8F42BFB291192D900679E15 /* Resources */,
-				F8A11C74291115CC007AFFF4 /* Info.plist */,
 			);
 			path = Guidancer;
 			sourceTree = "<group>";
@@ -349,6 +359,7 @@
 		F8F42BFF291193AA00679E15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				867BAD38293F2795004C7C96 /* ProfileModule */,
 				F83836D429155FFC0089DD0B /* MapModule */,
 				F83836CB29155FA70089DD0B /* LoginModule */,
 				86A6CA5329310D7800A447DF /* SearchModule */,
@@ -472,6 +483,7 @@
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
 				F83836BE291555580089DD0B /* Builder.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
+				867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */,
 				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
