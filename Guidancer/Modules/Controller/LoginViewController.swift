@@ -17,8 +17,8 @@ class LoginViewController: UIViewController, ViewControllerProtocol {
     
     var routerDelegate: LoginRouterDelegate?
     
-    let emailTextfield = GTextField(placeholder: "Email address", font: .medium18)
-    let passwordTextfield = GTextField(placeholder: "Password", font: .medium18)
+    let emailTextField = GTextField(placeholder: "Email address", font: .medium18)
+    let passwordTextField = GTextField(placeholder: "Password", font: .medium18)
     
     let titleLabel = GLabel(text: "Start exploring the world around!", font: .bold27)
     let choiceLabel = UILabel()
@@ -45,7 +45,7 @@ class LoginViewController: UIViewController, ViewControllerProtocol {
         choiceLabel.font = .medium21
         choiceLabel.textAlignment = .center
         
-        let stack = UIStackView(arrangedSubviews: [emailTextfield, passwordTextfield, signInButton, choiceLabel, appleButton, googleButton])
+        let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, signInButton, choiceLabel, appleButton, googleButton])
         
         stack.axis = .vertical
         stack.distribution = .fillEqually
@@ -80,7 +80,4 @@ class LoginViewController: UIViewController, ViewControllerProtocol {
         button.setAttributedTitle(attributedTitle, for: .normal)
         return button
     }
-    
-    
-    
 }
