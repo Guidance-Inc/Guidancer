@@ -12,6 +12,7 @@ class GRectangleButton: GButton {
     init(title: String,
          image: UIImage? = nil,
          frame: CGRect = .zero,
+         
          didTap: ((UIButton) -> Void)? = nil
     ) {
         self.title = title
@@ -27,6 +28,7 @@ class GRectangleButton: GButton {
         super.configureUI()
         setSize(width: 302, height: 52)
         backgroundColor = color
+        titleLabel?.font = .bold20
         setTitle(title, for: .normal)
         layer.cornerRadius = 16
         if image != nil {
