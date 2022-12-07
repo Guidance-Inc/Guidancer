@@ -31,6 +31,7 @@ class GRectangleButton: GButton {
         layer.cornerRadius = 16
         if image != nil {
             setImage(image, for: .normal)
+            clipsToBounds = true
             var configuration = UIButton.Configuration.filled()
             configuration.imagePadding = 10
             configuration.baseBackgroundColor = color

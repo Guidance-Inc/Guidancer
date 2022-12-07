@@ -9,17 +9,17 @@ import UIKit
 
 class GTextField: UITextField {
     
-    init(text: String,
+    init(placeholder: String,
          font: UIFont,
          frame: CGRect = .zero) {
         
         super.init(frame: frame)
         
-        self.placeholder           = text
+        self.placeholder           = placeholder
         self.textColor             = .black
         self.font                  = font
         self.attributedPlaceholder = NSAttributedString(
-            string: text,
+            string: placeholder,
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
     }

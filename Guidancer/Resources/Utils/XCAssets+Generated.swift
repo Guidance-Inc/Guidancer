@@ -49,6 +49,7 @@ internal enum Asset {
     internal static let vector16 = ImageAsset(name: "Vector 16")
     internal static let vector = ImageAsset(name: "Vector")
     internal static let applelogo = ImageAsset(name: "applelogo")
+    internal static let google = ImageAsset(name: "google")
     internal static let lock = ImageAsset(name: "lock")
     internal static let map = ImageAsset(name: "map")
     internal static let microphone2 = ImageAsset(name: "microphone2")
@@ -56,6 +57,7 @@ internal enum Asset {
     internal static let `set` = ImageAsset(name: "set")
     internal static let user = ImageAsset(name: "user")
   }
+  internal static let googlelogo = ImageAsset(name: "googlelogo")
   internal static let sight = ImageAsset(name: "sight")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
