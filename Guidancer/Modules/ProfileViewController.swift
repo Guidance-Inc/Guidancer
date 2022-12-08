@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController  {
-    
+    ///try
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     var collectionView: UICollectionView!
 
