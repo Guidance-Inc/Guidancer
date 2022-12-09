@@ -15,10 +15,9 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
     
     var routerDelegate: LoginRouterDelegate?
     
-    private let emailTextField = GTextField(placeholder: "Email address",
-                                            font: .medium18)
-    private let passwordTextField = GTextField(placeholder: "Password",
-                                       font: .medium18)
+    private let emailTextField = GTextField(imageName: "user", placeholder: "Email", font: .medium18)
+    
+    private let passwordTextField = GTextField(imageName: "lock", placeholder: "Password", font: .medium18)
     
     private let titleLabel = GLabel(text: "Start exploring the world around!", font: .bold27)
     private let choiceLabel = UILabel()
@@ -28,7 +27,8 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
                                        image: UIImage(systemName: "applelogo"))
     private let googleButton = GRectangleButton(title: "Continue with Google")
     
-    lazy var dontHaveAccountButton = UIButton()
+    private let alreadyHaveAccountButton = HaveAccountButton().attributedButton("Don't have an account ? ", "Sign up here")
+    
     lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
                                                     passwordTextField,
                                                     signInButton,
@@ -70,23 +70,13 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
     }
     
     func configDontHaveAccountButton() {
-        view.addSubview(dontHaveAccountButton)
-        dontHaveAccountButton.translatesAutoresizingMaskIntoConstraints = false
-        dontHaveAccountButton.addAnchors(left: view.leftAnchor, right: view.rightAnchor,
-                                         paddingLeft: 40, paddinRight: 40, height: 30)
-        dontHaveAccountButton.topAnchor.constraint(greaterThanOrEqualTo: stack.bottomAnchor).isActive = true
-        dontHaveAccountButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
-                                                      constant: -20).isActive = true
-        let firstAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.gBlack]
-        let secondAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
-                               NSAttributedString.Key.foregroundColor: UIColor.gYellowGreen]
         
-        let attributedTitle = NSMutableAttributedString(string: "Don't have an account? ",
-                                                        attributes: firstAttribute)
-        attributedTitle.append(NSAttributedString(string: "Sign up here",
-                                                  attributes: secondAttribute))
-        
-        dontHaveAccountButton.setAttributedTitle(attributedTitle, for: .normal)
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.addAnchors(left: view.leftAnchor,
+                                            bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
+                                            paddingLeft: 40,
+                                            paddinRight: 40)
+
     }
   
 }
