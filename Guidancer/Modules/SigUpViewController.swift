@@ -11,14 +11,87 @@ protocol SingUpRouterDelegate: AnyObject {
     func didSelect(_ viewController: SigUpViewController)
 }
 
-class SigUpViewController: UIViewController, ViewControllerProtocol {
+final class SigUpViewController: UIViewController, ViewControllerProtocol {
     
     var routerDelegate: SingUpRouterDelegate?
     
+    private let emailTextField = GTextField(placeholder: "Enter email address",
+                                            font: .medium18)
+    private let passwordTextField = GTextField(placeholder: "Create a password",
+                                               font: .medium18)
+    private let nicknameTextField = GTextField(placeholder: "Choose your nickname",
+                                               font: .medium18)
+    private let titleLabel = GLabel(text: "Start exploring the world around!",
+                                    font: .bold27)
+    private let choiceLabel = UILabel()
+    
+    private let signUpButton = GRectangleButton(title: "Sign Up")
+    
+    private let appleButton = GRectangleButton(title: "Continue with Apple",
+                                               image: UIImage(systemName: "applelogo"))
+    private let googleButton = GRectangleButton(title: "Continue with Google")
+    
+    lazy var alreadyHaveAccountButton = UIButton()
+    
+    lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
+                                                   passwordTextField,
+                                                   nicknameTextField,
+                                                   signUpButton,
+                                                   choiceLabel,
+                                                   appleButton,
+                                                   googleButton])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Sig-Up"
-        view.backgroundColor = .yellow
+        configureUI()
     }
     
+    private func configureUI() {
+        view.backgroundColor = .white
+        configLabel()
+        configStackView()
+        configAlreadyHaveAccountButton()
+    }
+    
+    func configLabel() {
+        view.addSubview(titleLabel)
+        titleLabel.addAnchors(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor,
+                              right: view.rightAnchor,
+                              paddingTop: 20, paddingLeft: 20, paddinRight: 20)
+        titleLabel.textAlignment = .center
+        
+        choiceLabel.text = "or"
+        choiceLabel.font = .medium21
+        choiceLabel.textAlignment = .center
+    }
+    
+    func configStackView() {
+        view.addSubview(stack)
+        stack.axis = .vertical
+        stack.distribution = .fillEqually
+        stack.spacing = 16
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stack.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 50).isActive = true
+    }
+    
+    func configAlreadyHaveAccountButton() {
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.translatesAutoresizingMaskIntoConstraints = false
+        alreadyHaveAccountButton.addAnchors(left: view.leftAnchor, right: view.rightAnchor,
+                                         paddingLeft: 40, paddinRight: 40, height: 30)
+        alreadyHaveAccountButton.topAnchor.constraint(greaterThanOrEqualTo: stack.bottomAnchor).isActive = true
+        alreadyHaveAccountButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+                                                      constant: -20).isActive = true
+        let firstAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.gBlack]
+        let secondAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16),
+                               NSAttributedString.Key.foregroundColor: UIColor.gYellowGreen]
+        
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account? ",
+                                                        attributes: firstAttribute)
+        attributedTitle.append(NSAttributedString(string: "Login here",
+                                                  attributes: secondAttribute))
+        
+        alreadyHaveAccountButton.setAttributedTitle(attributedTitle, for: .normal)
+    }
 }
