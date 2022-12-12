@@ -57,7 +57,7 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
     
     private func setupHorizontalLayout() {
         horizontalLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0 , right: 10)
-        horizontalLayout.itemSize = CGSize(width: 350, height: 200)
+        horizontalLayout.itemSize = CGSize(width: 300, height: 150)
     }
     
     private func setupCollectionViews() {
@@ -93,13 +93,13 @@ class SearchController: UIViewController, UICollectionViewDelegate, UICollection
             horizontalCollectionView.topAnchor.constraint(equalTo: margins.topAnchor),
             horizontalCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             view.trailingAnchor.constraint(equalTo: horizontalCollectionView.leadingAnchor),
-            collectionView1.topAnchor.constraint(equalTo: horizontalCollectionView.bottomAnchor),
+            collectionView1.topAnchor.constraint(equalTo: horizontalCollectionView.bottomAnchor,constant: 10),
             collectionView1.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             view.trailingAnchor.constraint(equalTo: collectionView1.leadingAnchor),
             view.bottomAnchor.constraint(equalTo: collectionView1.bottomAnchor, constant: 0),
             collectionView1.heightAnchor.constraint(equalToConstant: view.frame.size.height - 370),
             collectionView1.widthAnchor.constraint(equalToConstant: view.frame.width),
-            horizontalCollectionView.heightAnchor.constraint(equalToConstant: 250),
+            horizontalCollectionView.heightAnchor.constraint(equalToConstant: 170),
             horizontalCollectionView.widthAnchor.constraint(equalToConstant: view.frame.size.width),
         ])
     }

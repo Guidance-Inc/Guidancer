@@ -33,7 +33,7 @@ class SearchScreenCollectionViewCell: PostCollectionViewCell {
         }()
 
         let whoAndWhenPost = GLabel(font: UIFont.systemFont(ofSize: 12, weight: .light),
-                                    fontColor: .gGray)
+                                    fontColor: .gray)
         let likesNumber = GLabel(font: .regular14)
         let commentNumber = GLabel(font: .regular14)
         let commentImage = GLikeCommentButton(icon: UIImage(systemName: "heart"))

@@ -16,9 +16,11 @@
 		11661CF62911BDE20009D41E /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */; };
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
+		860DF7882947D2F2003541C1 /* GuestProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DF7872947D2F2003541C1 /* GuestProfileViewController.swift */; };
+		860DF78B2947D6E0003541C1 /* AudioGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DF78A2947D6E0003541C1 /* AudioGuideViewController.swift */; };
 		863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */; };
 		8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */; };
-		867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BAD39293F27A5004C7C96 /* ProfileViewController.swift */; };
+		867BAD3A293F27A5004C7C96 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BAD39293F27A5004C7C96 /* MyProfileViewController.swift */; };
 		86A6CA5229310D7500A447DF /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6CA5129310D7500A447DF /* SearchController.swift */; };
 		F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */; };
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
@@ -67,9 +69,11 @@
 		11661CF12911BDE20009D41E /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		860DF7872947D2F2003541C1 /* GuestProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestProfileViewController.swift; sourceTree = "<group>"; };
+		860DF78A2947D6E0003541C1 /* AudioGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioGuideViewController.swift; sourceTree = "<group>"; };
 		863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
-		867BAD39293F27A5004C7C96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		867BAD39293F27A5004C7C96 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		86A6CA5129310D7500A447DF /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		F82A6BAE2919201900863F78 /* GLikeCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLikeCommentButton.swift; sourceTree = "<group>"; };
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -137,10 +141,19 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		860DF7892947D6C5003541C1 /* AudioGuideModule */ = {
+			isa = PBXGroup;
+			children = (
+				860DF78A2947D6E0003541C1 /* AudioGuideViewController.swift */,
+			);
+			name = AudioGuideModule;
+			sourceTree = "<group>";
+		};
 		867BAD38293F2795004C7C96 /* ProfileModule */ = {
 			isa = PBXGroup;
 			children = (
-				867BAD39293F27A5004C7C96 /* ProfileViewController.swift */,
+				867BAD39293F27A5004C7C96 /* MyProfileViewController.swift */,
+				860DF7872947D2F2003541C1 /* GuestProfileViewController.swift */,
 			);
 			name = ProfileModule;
 			sourceTree = "<group>";
@@ -359,6 +372,7 @@
 		F8F42BFF291193AA00679E15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				860DF7892947D6C5003541C1 /* AudioGuideModule */,
 				867BAD38293F2795004C7C96 /* ProfileModule */,
 				F83836D429155FFC0089DD0B /* MapModule */,
 				F83836CB29155FA70089DD0B /* LoginModule */,
@@ -483,7 +497,7 @@
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
 				F83836BE291555580089DD0B /* Builder.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
-				867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */,
+				867BAD3A293F27A5004C7C96 /* MyProfileViewController.swift in Sources */,
 				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
@@ -491,6 +505,8 @@
 				F8A11C69291115CA007AFFF4 /* SceneDelegate.swift in Sources */,
 				F87AA52B2913138F0058E77A /* XCAssets+Generated.swift in Sources */,
 				F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */,
+				860DF78B2947D6E0003541C1 /* AudioGuideViewController.swift in Sources */,
+				860DF7882947D2F2003541C1 /* GuestProfileViewController.swift in Sources */,
 				F83836DE291567630089DD0B /* MapRouter.swift in Sources */,
 				0D04626C2930EC5D009DB6AC /* HaveAccountButton.swift in Sources */,
 			);
