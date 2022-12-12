@@ -27,7 +27,7 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
                                        image: UIImage(systemName: "applelogo"))
     private let googleButton = GRectangleButton(title: "Continue with Google")
     
-    private let alreadyHaveAccountButton = HaveAccountButton().attributedButton("Don't have an account ? ", "Sign up here")
+    private let dontHaveAccountButton = HaveAccountButton().attributedButton("Don't have an account ? ", "Sign up here")
     
     lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
                                                     passwordTextField,
@@ -71,8 +71,8 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
     
     func configDontHaveAccountButton() {
         
-        view.addSubview(alreadyHaveAccountButton)
-        alreadyHaveAccountButton.addAnchors(left: view.leftAnchor,
+        view.addSubview(dontHaveAccountButton)
+        dontHaveAccountButton.addAnchors(left: view.leftAnchor,
                                             bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
                                             paddingLeft: 40,
                                             paddinRight: 40)

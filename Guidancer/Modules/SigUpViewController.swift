@@ -23,23 +23,15 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
     
     private let titleLabel = GLabel(text: "Start exploring the world around!",
                                     font: .bold27)
-    private let choiceLabel = UILabel()
     
     private let signUpButton = GRectangleButton(title: "Sign Up")
-    
-    private let appleButton = GRectangleButton(title: "Continue with Apple",
-                                               image: UIImage(systemName: "applelogo"))
-    private let googleButton = GRectangleButton(title: "Continue with Google")
     
     private let alreadyHaveAccountButton = HaveAccountButton().attributedButton("Already have an account ? ", "Login Here")
     
     lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
                                                    passwordTextField,
                                                    nicknameTextField,
-                                                   signUpButton,
-                                                   choiceLabel,
-                                                   appleButton,
-                                                   googleButton])
+                                                   signUpButton])
     
     
     override func viewDidLoad() {
@@ -51,8 +43,7 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
         view.backgroundColor = .white
         configLabel()
         configStackView()
-        configDontHaveAccountButton()
-        
+        configAlreadyHaveAccountButton()
     }
     
     func configLabel() {
@@ -61,10 +52,6 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
                               right: view.rightAnchor,
                               paddingTop: 20, paddingLeft: 20, paddinRight: 20)
         titleLabel.textAlignment = .center
-        
-        choiceLabel.text = "or"
-        choiceLabel.font = .medium21
-        choiceLabel.textAlignment = .center
     }
     
     func configStackView() {
@@ -75,18 +62,14 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stack.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 50).isActive = true
-
     }
     
-    func configDontHaveAccountButton() {
+    func configAlreadyHaveAccountButton() {
         
         view.addSubview(alreadyHaveAccountButton)
         alreadyHaveAccountButton.addAnchors(left: view.leftAnchor,
                                             bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor,
                                             paddingLeft: 40,
                                             paddinRight: 40)
-
     }
-    
-    
 }
