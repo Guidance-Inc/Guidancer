@@ -28,7 +28,7 @@ class SearchScreenCollectionViewCell: PostCollectionViewCell {
          var profileUserImageView: UIImageView = {
             let image = UIImageView()
             image.frame.size = CGSize(width: 50, height: 50)
-             image.clipsToBounds = true
+            image.clipsToBounds = true
             return image
         }()
 

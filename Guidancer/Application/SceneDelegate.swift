@@ -15,10 +15,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let builder = Builder()
-        let rootViewController = RootTabBarController(builder: builder)
+//        let rootViewController = RootTabBarController(builder: builder)
+        let rootVC = ProfileViewController()
         window = UIWindow(windowScene: windowScene)
 //        window?.rootViewController = rootViewController
-        window?.rootViewController = UINavigationController(rootViewController: SearchController())
+        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
         window?.makeKeyAndVisible()
     }
 

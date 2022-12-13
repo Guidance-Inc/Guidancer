@@ -32,6 +32,7 @@ internal enum Asset {
     internal static let darkBlue = ColorAsset(name: "darkBlue")
     internal static let darkGray = ColorAsset(name: "darkGray")
     internal static let darkRed = ColorAsset(name: "darkRed")
+    internal static let gray = ColorAsset(name: "gray")
     internal static let green = ColorAsset(name: "green")
     internal static let pink = ColorAsset(name: "pink")
     internal static let red = ColorAsset(name: "red")
@@ -40,7 +41,7 @@ internal enum Asset {
     internal static let yellowGreen = ColorAsset(name: "yellowGreen")
   }
   internal enum Icons {
-    internal static let arrow4 = ImageAsset(name: "Arrow 4")
+    internal static let arrow4 = ImageAsset(name: "Arrow4")
     internal static let arrowLeft = ImageAsset(name: "Arrow_left")
     internal static let compassAltLight = ImageAsset(name: "Compass_alt_light")
     internal static let favorite = ImageAsset(name: "Favorite")
@@ -50,6 +51,7 @@ internal enum Asset {
     internal static let vector16 = ImageAsset(name: "Vector 16")
     internal static let vector = ImageAsset(name: "Vector")
     internal static let applelogo = ImageAsset(name: "applelogo")
+    internal static let at = ImageAsset(name: "at")
     internal static let lock = ImageAsset(name: "lock")
     internal static let map = ImageAsset(name: "map")
     internal static let microphone2 = ImageAsset(name: "microphone2")
@@ -57,6 +59,8 @@ internal enum Asset {
     internal static let `set` = ImageAsset(name: "set")
     internal static let user = ImageAsset(name: "user")
   }
+  internal static let image = ImageAsset(name: "Image")
+  internal static let bty = ImageAsset(name: "bty")
   internal static let sight = ImageAsset(name: "sight")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
