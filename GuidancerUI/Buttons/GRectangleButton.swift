@@ -35,6 +35,11 @@ class GRectangleButton: GButton {
             setImage(image, for: .normal)
             clipsToBounds = true
             var configuration = UIButton.Configuration.filled()
+            configuration.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+                var outgoing = incoming
+                outgoing.font = UIFont.bold20
+                return outgoing
+               }
             configuration.imagePadding = 10
             configuration.baseBackgroundColor = color
             self.configuration = configuration

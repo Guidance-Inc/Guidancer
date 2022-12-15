@@ -7,31 +7,35 @@
 
 import UIKit
 
-class HaveAccountButton: UIView {
+class haveAccaountButton : GButton {
     
-    override init (frame: CGRect) {
-        super.init(frame: frame)
+    let firstPart: String
+    let secondPart: String
+    
+    init(firstPart: String,
+         secondPart: String,frame: CGRect = .zero,
+         didTap: ((UIButton) -> Void)? = nil
+    ){
+        self.firstPart = firstPart
+        self.secondPart = secondPart
+        super.init(frame: frame, didTap: didTap)
     }
-    
-    func attributedButton(_ firstPart: String,
-                          _ secondPart: String) -> UIButton {
-        let button = UIButton(type: .system)
-        button.layer.shadowRadius  = 4
-        button.layer.shadowColor   = UIColor.black.cgColor
-        button.layer.shadowOffset  = CGSize(width: 0.0, height: 8.0)
-        button.layer.shadowOpacity = 0.5
-        button.layer.masksToBounds = false
-        
+    override func configureUI() {
+        super.configureUI()
+        self.layer.shadowRadius = 4
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 8.0)
+        self.layer.shadowOpacity = 0.5
+        self.layer.masksToBounds = false
         let attributeTitle = NSMutableAttributedString(
             string: firstPart,
-            attributes: [NSAttributedString.Key.font: UIFont.medium13, NSAttributedString.Key.foregroundColor: UIColor.gBlack])
-        
+            attributes: [NSAttributedString.Key.font: UIFont.medium13,
+                         NSAttributedString.Key.foregroundColor: UIColor.gBlack as Any])
         attributeTitle.append(NSAttributedString(
             string: secondPart,
-            attributes: [NSAttributedString.Key.font: UIFont.medium13, NSAttributedString.Key.foregroundColor: UIColor.gYellowGreen]))
-        
-        button.setAttributedTitle(attributeTitle, for: .normal)
-        return button
+            attributes: [NSAttributedString.Key.font: UIFont.medium13,
+                         NSAttributedString.Key.foregroundColor: UIColor.systemYellow as Any]))
+        self.setAttributedTitle(attributeTitle, for: .normal)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
