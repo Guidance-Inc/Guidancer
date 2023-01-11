@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  MyProfileViewController.swift
 //  Guidancer
 //
 //  Created by Артём Коротков on 06.12.2022.
@@ -7,16 +7,15 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController  {
-    
+class MyProfileViewController: UIViewController  {
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     var collectionView: UICollectionView!
 
     var image: UIImageView = {
         let image = UIImageView(image: UIImage(named: "Image"))
         image.clipsToBounds = true
-        image.setContentHuggingPriority(.defaultHigh + 1, for: .horizontal)
         image.layer.cornerRadius = 50
+        image.setContentHuggingPriority(.defaultHigh + 1, for: .horizontal)
         return image
     }()
     var decsOfProfile = GLabel(text: "Hello everyone! My name is Olivia, i enjoy traveling! Follow me and let’s enjoy together!",
@@ -36,11 +35,11 @@ class ProfileViewController: UIViewController  {
     }()
     var followButton: GButton = {
         let bt = GButton()
-        bt.setTitle("follow", for: .normal)
-        bt.setTitleColor(UIColor(named: "green"), for: .normal)
+        bt.setTitle("+ add post", for: .normal)
+        bt.setTitleColor(UIColor(named: "blue"), for: .normal)
         bt.layer.cornerRadius = 15
         bt.layer.borderWidth = 1
-        bt.layer.borderColor = CGColor(red: 31/255, green: 157/255, blue: 0, alpha: 1)
+        bt.layer.borderColor = CGColor(red: 20/255, green: 181/255, blue: 232/255, alpha: 1)
         return bt
     }()
     
@@ -48,39 +47,29 @@ class ProfileViewController: UIViewController  {
         super.viewDidLoad()
         configureView()
         setupLayout()
-        setupSortingItemBar()
+        setupSettingsItemBar()
     }
     private func setupLayout() {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0 , right: 0)
         layout.itemSize = CGSize(width: 350, height: 200)
     }
     
-    func setupSortingItemBar() {
-        var arrowItemBar = UIBarButtonItem()
-        arrowItemBar = UIBarButtonItem(image: UIImage(named: "Arrow4"),
-                                       landscapeImagePhone: .none,
-                                       style: .done,
-                                       target: self,
-                                       action: #selector(sortingActionItemBar))
-        arrowItemBar.tintColor = .black
-        navigationItem.leftBarButtonItem = arrowItemBar
-        
-        var sortingItemBar = UIBarButtonItem()
-        sortingItemBar = UIBarButtonItem(image: UIImage(named: "set"),
+    func setupSettingsItemBar() {
+        var settingsItem = UIBarButtonItem()
+        settingsItem = UIBarButtonItem(image: UIImage(named: "set"),
                                          landscapeImagePhone: .none,
                                          style: .done,
                                          target: self,
-                                         action: #selector(sortingActionItemBar))
-        sortingItemBar.tintColor = .black
-        navigationItem.rightBarButtonItem = sortingItemBar
+                                         action: #selector(settingActionItemBar))
+        settingsItem.tintColor = .black
+        navigationItem.rightBarButtonItem = settingsItem
         
         }
     
-    @objc func sortingActionItemBar() {
+    @objc func settingActionItemBar() {
         
     }
     
-
     func configureView() {
         view.backgroundColor = .white
         //create stackViews
@@ -139,7 +128,7 @@ class ProfileViewController: UIViewController  {
     
 }
 
-extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension MyProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         10
     }

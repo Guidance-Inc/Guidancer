@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let builder = Builder()
 //        let rootViewController = RootTabBarController(builder: builder)
-        let rootVC = ProfileViewController()
+        let rootVC = AudioGuideViewController()
         window = UIWindow(windowScene: windowScene)
 //        window?.rootViewController = rootViewController
         window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
