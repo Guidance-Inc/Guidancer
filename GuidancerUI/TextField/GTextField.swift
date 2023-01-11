@@ -7,27 +7,53 @@
 
 import UIKit
 
-class GTextField: UITextField {
+class GTextField: UIView {
     
-    init(text: String,
+    let image: UIImage?
+    let font: UIFont
+    let placeholder: String
+    let imageView = UIImageView()
+    let textField = UITextField()
+    
+    init(imageName: String,
+         placeholder: String,
          font: UIFont,
-         frame: CGRect = .zero) {
+         frame: CGRect = .zero
+    ) {
+        self.image = UIImage(named: imageName)
+        self.font = font
+        self.placeholder = placeholder
+        self.imageView.image = image
         
         super.init(frame: frame)
-        
-        self.placeholder           = text
-        self.textColor             = .black
-        self.font                  = font
-        self.attributedPlaceholder = NSAttributedString(
-            string: text,
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
-        
     }
-    
     required init(coder aDecoder: NSCoder) {
-        
         fatalError("init(coder:) has not been implemented")
+    }
+    override func layoutSubviews() {
+        layer.cornerRadius = 16
+        layer.borderWidth = 2
         
+        self.addSubview(imageView)
+        imageView.tintColor = .gBlack
+        imageView.addAnchors(left: self.leftAnchor,
+                             bottom: self.bottomAnchor,
+                             paddingLeft: 8,
+                             paddingBottom: 13)
+        imageView.setSize(width: 24, height: 24)
+        
+        self.addSubview(textField)
+        textField.addAnchors(left: imageView.rightAnchor,
+                             bottom: self.bottomAnchor,
+                             right: self.rightAnchor,
+                             paddingLeft: 8,
+                             paddingBottom: 13)
+        textField.placeholder = placeholder
+        textField.textColor = .black
+        textField.font = font
+        textField.attributedPlaceholder = NSAttributedString(
+            string: placeholder,
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
     }
     
 }
