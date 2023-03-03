@@ -32,7 +32,7 @@ class GTextField: UIView {
     }
     override func layoutSubviews() {
         layer.cornerRadius = 16
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         
         self.addSubview(imageView)
         imageView.tintColor = .gBlack

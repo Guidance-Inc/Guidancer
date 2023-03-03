@@ -28,7 +28,7 @@ final class LoginViewController: UIViewController, ViewControllerProtocol {
                                                image: UIImage(systemName: "applelogo"))
     private let googleButton = GRectangleButton(title: "Continue with Google",
                                                 image: UIImage(systemName: "applelogo"))
-    private let dontHaveAccountButton = haveAccaountButton(firstPart: "Don't have an account ? ",
+    private let dontHaveAccountButton = HaveAccountButton(firstPart: "Don't have an account ? ",
                                                            secondPart: "Sign up here")
     lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
                                                     passwordTextField,

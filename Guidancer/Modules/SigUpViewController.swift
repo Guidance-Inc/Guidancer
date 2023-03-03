@@ -32,15 +32,15 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
                                                image: UIImage(systemName: "applelogo"))
     private let googleButton = GRectangleButton(title: "Continue with Google",
                                                 image: UIImage(systemName: "applelogo"))
-    private let alreadyHaveAccountButton = haveAccaountButton(firstPart: "Already have an account? ",
+    private let alreadyHaveAccountButton = HaveAccountButton(firstPart: "Already have an account? ",
                                                               secondPart: "Login here")
     lazy var stack = UIStackView(arrangedSubviews: [emailTextField,
                                                     passwordTextField,
                                                     nicknameTextField,
                                                     signUpButton,
                                                     choiceLabel,
-                                                    googleButton,
-                                                    appleButton])
+                                                    appleButton,
+                                                    googleButton])
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()

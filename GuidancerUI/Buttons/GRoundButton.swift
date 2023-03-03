@@ -81,4 +81,3 @@ class GRoundButton: GButton {
         setImage(image, for: .normal)
     }
 }
-

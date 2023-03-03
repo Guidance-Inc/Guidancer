@@ -7,13 +7,14 @@
 
 import UIKit
 
-class haveAccaountButton : GButton {
+class HaveAccountButton : GButton {
     
     let firstPart: String
     let secondPart: String
     
     init(firstPart: String,
-         secondPart: String,frame: CGRect = .zero,
+         secondPart: String,
+         frame: CGRect = .zero,
          didTap: ((UIButton) -> Void)? = nil
     ){
         self.firstPart = firstPart
