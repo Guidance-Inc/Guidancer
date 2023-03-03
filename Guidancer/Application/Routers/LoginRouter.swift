@@ -46,7 +46,7 @@ extension LoginRouter: LoginRouterDelegate {
 
 extension LoginRouter: SingUpRouterDelegate {
     
-    func didSelect(_ viewController: SigUpViewController) {
+    func didSelect(_ viewController: SignUpViewController) {
        popLoginViewController()
     }
     

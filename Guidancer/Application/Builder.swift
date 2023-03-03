@@ -9,7 +9,7 @@ import Foundation
 
 protocol BuilderProtocol {
     func createLoginVC(router: RouterProtocol) -> LoginViewController
-    func createSignUpVC(router: RouterProtocol) -> SigUpViewController
+    func createSignUpVC(router: RouterProtocol) -> SignUpViewController
     func createuserMapVC(router: RouterProtocol) -> MapViewController
     func createUserProfileVC(router: RouterProtocol) -> UserProfileViewController
 }
@@ -32,7 +32,7 @@ class Builder: BuilderProtocol {
         return createViewController(router: router)
     }
     
-    func createSignUpVC(router: RouterProtocol) -> SigUpViewController {
+    func createSignUpVC(router: RouterProtocol) -> SignUpViewController {
         return createViewController(router: router)
     }
     

@@ -8,10 +8,10 @@
 import UIKit
 
 protocol SingUpRouterDelegate: AnyObject {
-    func didSelect(_ viewController: SigUpViewController)
+    func didSelect(_ viewController: SignUpViewController)
 }
 
-final class SigUpViewController: UIViewController, ViewControllerProtocol {
+final class SignUpViewController: UIViewController, ViewControllerProtocol {
     
     var routerDelegate: SingUpRouterDelegate?
     
@@ -41,6 +41,7 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
                                                     choiceLabel,
                                                     appleButton,
                                                     googleButton])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -83,3 +84,5 @@ final class SigUpViewController: UIViewController, ViewControllerProtocol {
                                             paddinRight: 40)
     }
 }
+
+

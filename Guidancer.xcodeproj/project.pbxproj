@@ -27,7 +27,7 @@
 		F83836BC291540A70089DD0B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BB291540A70089DD0B /* LoginRouter.swift */; };
 		F83836BE291555580089DD0B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BD291555580089DD0B /* Builder.swift */; };
 		F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836BF29155B660089DD0B /* RootTabBarController.swift */; };
-		F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D029155FDC0089DD0B /* SigUpViewController.swift */; };
+		F83836D129155FDC0089DD0B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D029155FDC0089DD0B /* SignUpViewController.swift */; };
 		F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D229155FE90089DD0B /* LoginViewController.swift */; };
 		F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836D92915604A0089DD0B /* UserProfileViewController.swift */; };
 		F83836DC2915609D0089DD0B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83836DB2915609D0089DD0B /* MapViewController.swift */; };
@@ -81,7 +81,7 @@
 		F83836BB291540A70089DD0B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F83836BD291555580089DD0B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		F83836BF29155B660089DD0B /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
-		F83836D029155FDC0089DD0B /* SigUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigUpViewController.swift; sourceTree = "<group>"; };
+		F83836D029155FDC0089DD0B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F83836D229155FE90089DD0B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F83836D92915604A0089DD0B /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		F83836DB2915609D0089DD0B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		F83836CE29155FC70089DD0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F83836D029155FDC0089DD0B /* SigUpViewController.swift */,
+				F83836D029155FDC0089DD0B /* SignUpViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -476,7 +476,7 @@
 			files = (
 				8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */,
 				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
-				F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */,
+				F83836D129155FDC0089DD0B /* SignUpViewController.swift in Sources */,
 				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
 				F82A6BAF2919201900863F78 /* GLikeCommentButton.swift in Sources */,
