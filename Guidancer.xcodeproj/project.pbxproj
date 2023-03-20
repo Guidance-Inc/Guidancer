@@ -17,8 +17,10 @@
 		11E00C142912788000387AF1 /* UIFont++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C132912788000387AF1 /* UIFont++.swift */; };
 		11E00C162912789F00387AF1 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E00C152912789F00387AF1 /* UIColor++.swift */; };
 		630122E62992E82800089D2A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630122E52992E82800089D2A /* PostViewController.swift */; };
+		635A2E1329BCCAC0000C6E43 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A2E1229BCCAC0000C6E43 /* NotificationViewController.swift */; };
 		635E2204299D53780024A4B7 /* SelectLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635E2203299D53780024A4B7 /* SelectLocationController.swift */; };
 		637035ED296E01E80009118C /* GWhiteRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637035EC296E01E80009118C /* GWhiteRectangleButton.swift */; };
+		639D450B29C8AE32004B2AC5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */; };
 		863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */; };
 		8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */; };
 		867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BAD39293F27A5004C7C96 /* ProfileViewController.swift */; };
@@ -71,8 +73,10 @@
 		11E00C132912788000387AF1 /* UIFont++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont++.swift"; sourceTree = "<group>"; };
 		11E00C152912789F00387AF1 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		630122E52992E82800089D2A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		635A2E1229BCCAC0000C6E43 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		635E2203299D53780024A4B7 /* SelectLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationController.swift; sourceTree = "<group>"; };
 		637035EC296E01E80009118C /* GWhiteRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWhiteRectangleButton.swift; sourceTree = "<group>"; };
+		639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		867BAD39293F27A5004C7C96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 				F83836CB29155FA70089DD0B /* LoginModule */,
 				86A6CA5329310D7800A447DF /* SearchModule */,
 				630122E52992E82800089D2A /* PostViewController.swift */,
+				635A2E1229BCCAC0000C6E43 /* NotificationViewController.swift */,
+				639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 			files = (
 				8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */,
 				F86A523B29129E2D00FD5D7D /* UIView++.swift in Sources */,
+				635A2E1329BCCAC0000C6E43 /* NotificationViewController.swift in Sources */,
 				F83836D129155FDC0089DD0B /* SigUpViewController.swift in Sources */,
 				F83836C029155B660089DD0B /* RootTabBarController.swift in Sources */,
 				F83836D329155FE90089DD0B /* LoginViewController.swift in Sources */,
@@ -497,6 +504,7 @@
 				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
 				11E00C162912789F00387AF1 /* UIColor++.swift in Sources */,
 				635E2204299D53780024A4B7 /* SelectLocationController.swift in Sources */,
+				639D450B29C8AE32004B2AC5 /* CustomTableViewCell.swift in Sources */,
 				F8C53DED29320CAE0071D6D8 /* GCollectionViewCell.swift in Sources */,
 				F8F42BFA2911862700679E15 /* GRectangleButton.swift in Sources */,
 				637035ED296E01E80009118C /* GWhiteRectangleButton.swift in Sources */,

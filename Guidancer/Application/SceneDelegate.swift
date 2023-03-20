@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootVC = ProfileViewController()
         window = UIWindow(windowScene: windowScene)
 //        window?.rootViewController = rootViewController
-        window?.rootViewController = UINavigationController(rootViewController: PostViewController())
+        window?.rootViewController = UINavigationController(rootViewController: NotificationViewController())
         window?.makeKeyAndVisible()
     }
 
