@@ -2,7 +2,6 @@
 //  CustomTableViewCell.swift
 //  Guidancer
 //
-//  Created by David on 20.03.23.
 //
 
 import UIKit

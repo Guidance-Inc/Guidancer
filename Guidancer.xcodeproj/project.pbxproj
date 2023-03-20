@@ -21,6 +21,7 @@
 		635E2204299D53780024A4B7 /* SelectLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635E2203299D53780024A4B7 /* SelectLocationController.swift */; };
 		637035ED296E01E80009118C /* GWhiteRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637035EC296E01E80009118C /* GWhiteRectangleButton.swift */; };
 		639D450B29C8AE32004B2AC5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */; };
+		639D450D29C8B223004B2AC5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D450C29C8B223004B2AC5 /* TableViewController.swift */; };
 		863E1145292A3BF40062EC19 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */; };
 		8671DCCA292FB6030038E083 /* SearchScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */; };
 		867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BAD39293F27A5004C7C96 /* ProfileViewController.swift */; };
@@ -77,6 +78,7 @@
 		635E2203299D53780024A4B7 /* SelectLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationController.swift; sourceTree = "<group>"; };
 		637035EC296E01E80009118C /* GWhiteRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWhiteRectangleButton.swift; sourceTree = "<group>"; };
 		639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		639D450C29C8B223004B2AC5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		863E1144292A3BF40062EC19 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		8671DCC9292FB6030038E083 /* SearchScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		867BAD39293F27A5004C7C96 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 				630122E52992E82800089D2A /* PostViewController.swift */,
 				635A2E1229BCCAC0000C6E43 /* NotificationViewController.swift */,
 				639D450A29C8AE32004B2AC5 /* CustomTableViewCell.swift */,
+				639D450C29C8B223004B2AC5 /* TableViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				F87AA52A2913138F0058E77A /* XCFonts+Generated.swift in Sources */,
 				F83836DA2915604A0089DD0B /* UserProfileViewController.swift in Sources */,
 				F83836BE291555580089DD0B /* Builder.swift in Sources */,
+				639D450D29C8B223004B2AC5 /* TableViewController.swift in Sources */,
 				F8A11C67291115CA007AFFF4 /* AppDelegate.swift in Sources */,
 				867BAD3A293F27A5004C7C96 /* ProfileViewController.swift in Sources */,
 				86A6CA5229310D7500A447DF /* SearchController.swift in Sources */,
